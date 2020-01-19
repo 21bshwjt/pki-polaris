@@ -126,4 +126,3 @@ function Get_CorpCertExpiry ($duedays=500,$CAlocation="corp-dc02.msft.net\msft-c
  
 Invoke-SQLiteBulkCopy -DataTable $DataTable -DataSource $Database -Table ca -NotifyAfter 1000 -ConflictClause Ignore -Force -Verbose
 Invoke-SqliteQuery -DataSource $Database -Query "SELECT * FROM ca"
-#Copy-Item "C:\LinDev\cache\ca2.SQLite" -Destination $remotepath -Force -Verbose
