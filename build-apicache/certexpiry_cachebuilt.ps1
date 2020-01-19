@@ -6,7 +6,7 @@
     
     
 
-#get CA2 Details
+#Get Certificate Details
 function Get_CorpCertExpiry ($duedays=500,$CAlocation="corp-dc02.msft.net\msft-ca1") 
         {
             $certs = @()
