@@ -1,3 +1,10 @@
-﻿# pki-polaris
-﻿#  Prerequisites | Polaris (PSModule) , PSSQLite (PSModule) & nssm  
- Special thanks to Deepak Dhami , Siva Nallagatla  & Chen v.
+﻿###<p>
+###<span style="color:black"><b>PKI-Polaris</b></span>
+</p>
+###<span style="color:black"><b>Prerequisites | Polaris (PSModule) , PSSQLite (PSModule) & nssm</b></span>
+```sh
+$ Thanks Deepak Dhami
+$ Thanks Siva Nallagatla
+$ Thanks Chen v
+###<span style="color:black"><b>Development</b></span>
+bshwjt
