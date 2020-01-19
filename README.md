@@ -1,2 +1,2 @@
 ﻿# pki-polaris
-Prerequisites | Polaris & PSSQLite
+Prerequisites | Polaris (PSModule) , PSSQLite (PSModule) & nssm
