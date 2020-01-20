@@ -2,7 +2,7 @@
 
     Param(
 
-        [string]$nssmPath = 'C:\WebApi\nssm-2.24\win64',
+        [string]$nssmPath = 'C:\nssm-2.24\win64',
         [string]$Name,
         [string]$Description,
         [string]$Executable,

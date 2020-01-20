@@ -1,3 +1,4 @@
+. C:\WebApi\css\css.ps1
 $css = @"
 <link rel="shortcut icon" href="https://media-exp1.licdn.com/dms/image/C5603AQF32M9PAU6shg/profile-displayphoto-shrink_200_200/0?e=1585180800&v=beta&t=TxiT4J6jY6aH0W6jT_gskE4IoGim8lDT8EWBPqSqA0s"/>
 <Title>Corp | Certificate Expiry</Title>
@@ -10,4 +11,4 @@ $getca = Invoke-SqliteQuery -DataSource $Database -Query "SELECT * FROM ca"
 $DbwriteTime = (Get-Item "C:\WebApi\apicache\ca.SQLite").LastWriteTime
 
 $htmlca = $getca
-$htmlca | ConvertTo-Html -Title "Corp | CA Report" -CssUri "http://corp-dc02/table.css" -Head $css -PreContent "<h2><font color = #008000><center>Corp | Certificate Expiry Report</font></h2><h8>Last Update: $DbwriteTime</h8>" | Out-String
+$htmlca | ConvertTo-Html -Title "Corp | CA Report" -CssUri $petritable -Head $css -PreContent "<h2><font color = #008000><center>Corp | Certificate Expiry Report</font></h2><h8>Last Update: $DbwriteTime</h8>" | Out-String

@@ -1,0 +1,54 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20200120121520
+Username: MSFT\gMSA-webapi01$
+RunAs User: MSFT\gMSA-webapi01$
+Configuration Name: 
+Machine: CORP-WEBAPI01 (Microsoft Windows NT 10.0.17763.0)
+Host Application: Powershell.exe -ExecutionPolicy Bypass -Command C:\WebApi\mainpol.ps1
+Process ID: 2980
+PSVersion: 5.1.17763.771
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.17763.771
+BuildVersion: 10.0.17763.771
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\WebApi\Logs\Polaris_01.20.2020.12.15.20.log
+
+
+Port              : 81
+RouteMiddleWare   : {}
+ScriptblockRoutes : {[/routes/:FilePath?,
+                    System.Collections.Generic.Dictionary`2[System.String,System.Management.Automation.ScriptBlock]],
+                    [/home,
+                    System.Collections.Generic.Dictionary`2[System.String,System.Management.Automation.ScriptBlock]],
+                    [/certexpiry,
+                    System.Collections.Generic.Dictionary`2[System.String,System.Management.Automation.ScriptBlock]]}
+GetLogsString     : PolarisLogs
+ClassDefinitions  :
+ContextHandler    : System.AsyncCallback
+
+VERBOSE: Loading module from path 'C:\Program Files\WindowsPowerShell\Modules\PSSQLite\1.0.3\PSSQLite.psd1'.
+VERBOSE: Populating RepositorySourceLocation property for module PSSQLite.
+VERBOSE: Loading module from path 'C:\Program Files\WindowsPowerShell\Modules\PSSQLite\1.0.3\PSSQLite.psm1'.
+VERBOSE: Importing function 'Invoke-SQLiteBulkCopy'.
+VERBOSE: Importing function 'Invoke-SqliteQuery'.
+VERBOSE: Importing function 'New-SQLiteConnection'.
+VERBOSE: Importing function 'Out-DataTable'.
+VERBOSE: Loading module from path 'C:\Program Files\WindowsPowerShell\Modules\PSSQLite\1.0.3\PSSQLite.psd1'.
+VERBOSE: Importing function 'Invoke-SQLiteBulkCopy'.
+VERBOSE: Importing function 'Invoke-SqliteQuery'.
+VERBOSE: Importing function 'New-SQLiteConnection'.
+VERBOSE: Importing function 'Out-DataTable'.
+PS>TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+>> $global:?
+False
+**********************
+Windows PowerShell transcript end
+End time: 20200120121634
+**********************

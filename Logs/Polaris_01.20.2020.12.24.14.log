@@ -1,12 +1,12 @@
 ﻿**********************
 Windows PowerShell transcript start
-Start time: 20200119125806
+Start time: 20200120122414
 Username: MSFT\gMSA-webapi01$
 RunAs User: MSFT\gMSA-webapi01$
 Configuration Name: 
 Machine: CORP-WEBAPI01 (Microsoft Windows NT 10.0.17763.0)
 Host Application: Powershell.exe -ExecutionPolicy Bypass -Command C:\WebApi\mainpol.ps1
-Process ID: 3908
+Process ID: 3100
 PSVersion: 5.1.17763.771
 PSEdition: Desktop
 PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.17763.771
@@ -16,7 +16,7 @@ WSManStackVersion: 3.0
 PSRemotingProtocolVersion: 2.3
 SerializationVersion: 1.1.0.1
 **********************
-Transcript started, output file is C:\WebApi\Logs\Polaris_01.19.2020.12.58.06.log
+Transcript started, output file is C:\WebApi\Logs\Polaris_01.20.2020.12.24.14.log
 
 
 Port              : 81
@@ -88,27 +88,3 @@ VERBOSE: Importing function 'Invoke-SQLiteBulkCopy'.
 VERBOSE: Importing function 'Invoke-SqliteQuery'.
 VERBOSE: Importing function 'New-SQLiteConnection'.
 VERBOSE: Importing function 'Out-DataTable'.
-VERBOSE: Loading module from path 'C:\Program Files\WindowsPowerShell\Modules\PSSQLite\1.0.3\PSSQLite.psd1'.
-VERBOSE: Importing function 'Invoke-SQLiteBulkCopy'.
-VERBOSE: Importing function 'Invoke-SqliteQuery'.
-VERBOSE: Importing function 'New-SQLiteConnection'.
-VERBOSE: Importing function 'Out-DataTable'.
-VERBOSE: Loading module from path 'C:\Program Files\WindowsPowerShell\Modules\PSSQLite\1.0.3\PSSQLite.psd1'.
-VERBOSE: Importing function 'Invoke-SQLiteBulkCopy'.
-VERBOSE: Importing function 'Invoke-SqliteQuery'.
-VERBOSE: Importing function 'New-SQLiteConnection'.
-VERBOSE: Importing function 'Out-DataTable'.
-VERBOSE: Loading module from path 'C:\Program Files\WindowsPowerShell\Modules\PSSQLite\1.0.3\PSSQLite.psd1'.
-VERBOSE: Importing function 'Invoke-SQLiteBulkCopy'.
-VERBOSE: Importing function 'Invoke-SqliteQuery'.
-VERBOSE: Importing function 'New-SQLiteConnection'.
-VERBOSE: Importing function 'Out-DataTable'.
-PS>TerminatingError(): "The pipeline has been stopped."
->> TerminatingError(): "The pipeline has been stopped."
->> TerminatingError(): "The pipeline has been stopped."
->> $global:?
-False
-**********************
-Windows PowerShell transcript end
-End time: 20200119131127
-**********************
