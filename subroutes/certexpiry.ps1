@@ -1,14 +1,22 @@
-. C:\WebApi\css\css.ps1
-$css = @"
-<link rel="shortcut icon" href="https://media-exp1.licdn.com/dms/image/C5603AQF32M9PAU6shg/profile-displayphoto-shrink_200_200/0?e=1585180800&v=beta&t=TxiT4J6jY6aH0W6jT_gskE4IoGim8lDT8EWBPqSqA0s"/>
-<Title>Corp | Certificate Expiry</Title>
-<head><meta http-equiv="refresh" content="60"></head>
-"@
-    
-Import-Module PSSQLite | Out-Null
-$Database = "C:\WebApi\apicache\ca.SQLite"
-$getca = Invoke-SqliteQuery -DataSource $Database -Query "SELECT * FROM ca"
-$DbwriteTime = (Get-Item "C:\WebApi\apicache\ca.SQLite").LastWriteTime
-
-$htmlca = $getca
-$htmlca | ConvertTo-Html -Title "Corp | CA Report" -CssUri $petritable -Head $css -PreContent "<h2><font color = #008000><center>Corp | Certificate Expiry Report</font></h2><h8>Last Update: $DbwriteTime</h8>" | Out-String
+[void](Import-Module PSSQLite)
+[void](Import-Module PSWriteHTML)
+    $Database = "C:\WebApi\apicache\ca.SQLite"
+    $getca = Invoke-SqliteQuery -DataSource $Database -Query "SELECT * FROM ca"
+    $DbwriteTimeca = (Get-Item "C:\WebApi\apicache\ca.SQLite").LastWriteTime
+    Dashboard -Name 'Certificate Expiry' -AutoRefresh 300 {
+       
+        Section -Name "<h4>Corp | Certificate Expiry</h4><span>Last Updated: $DbwriteTimeca</span>" -BackgroundColor Cornsilk {
+         Table -DataTable $getca -DefaultSortColumn 'DaysUntilExpired' -HideFooter {
+            TableConditionalFormatting -Name 'DaysUntilExpired' -ComparisonType number -Operator le -Value 8 -Color white -BackgroundColor Red
+            TableConditionalFormatting -Name 'DaysUntilExpired' -ComparisonType number -Operator eq -Value 8 -Color Black -BackgroundColor Pink
+            TableConditionalFormatting -Name 'DaysUntilExpired' -ComparisonType number -Operator eq -Value 9 -Color Black -BackgroundColor Pink
+            TableConditionalFormatting -Name 'DaysUntilExpired' -ComparisonType number -Operator eq -Value 10 -Color Black -BackgroundColor Pink
+            TableConditionalFormatting -Name 'DaysUntilExpired' -ComparisonType number -Operator eq -Value 11 -Color Black -BackgroundColor Pink
+            TableConditionalFormatting -Name 'DaysUntilExpired' -ComparisonType number -Operator eq -Value 12 -Color Black -BackgroundColor Pink
+            TableConditionalFormatting -Name 'DaysUntilExpired' -ComparisonType number -Operator eq -Value 13 -Color Black -BackgroundColor Pink
+            TableConditionalFormatting -Name 'DaysUntilExpired' -ComparisonType number -Operator eq -Value 14 -Color Black -BackgroundColor Pink
+            TableConditionalFormatting -Name 'DaysUntilExpired' -ComparisonType number -Operator eq -Value 15 -Color Black -BackgroundColor Pink
+            TableConditionalFormatting -Name 'DaysUntilExpired' -ComparisonType number -Operator ge -Value 16 -Color Black -BackgroundColor PaleGreen
+        }
+    }
+}
