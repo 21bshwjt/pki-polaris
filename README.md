@@ -4,5 +4,9 @@
 𝗣𝘀𝗪𝗿𝗶𝘁𝗲𝗵𝘁𝗺𝗹 with 𝗣𝗼𝗹𝗮𝗿𝗶𝘀. Both the modules are available in PowerShell Gallery . Build your Dashboard or Dynamic HTML report with ZERO html code . All feathers are available those are required for a Standard Dashboard. Like pagination , conditional formatting, csv export & many more .
 Tested on Windows & Linux . Lots of sample HTML examples are available on 𝔾𝕚𝕥𝕙𝕦𝕓 !
 
- Thanks to Deepak Dhami , Siva Nallagatla  & Chen V.
+#### Polaris : Web API Module - API will run as a service optionally gMSA(Group Managed Service Account) could be use with that service.  
+#### PswriteHTML : Build your Dashboard or Dynamic HTML report with ZERO html code
+#### PsSQLite : Database Management 
+
+Thanks to Deepak Dhami , Siva Nallagatla  & Chen V.
 
