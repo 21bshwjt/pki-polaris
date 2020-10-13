@@ -9,4 +9,5 @@ Tested on Windows & Linux . Lots of sample HTML examples are available on ğ”¾ğ
 #### PsSQLite : Database Management 
 
 Thanks to Deepak Dhami , Siva Nallagatla  & Chen V.
+Special Thanks Przemyslaw Klys (#### PswriteHTML Module Devoloper)
 
