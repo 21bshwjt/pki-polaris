@@ -1,22 +1,21 @@
+[void](Import-Module PSWriteHTML)   
 [void](Import-Module PSSQLite)
-[void](Import-Module PSWriteHTML)
-    $Database = "C:\WebApi\apicache\ca.SQLite"
-    $getca = Invoke-SqliteQuery -DataSource $Database -Query "SELECT * FROM ca"
-    $DbwriteTimeca = (Get-Item "C:\WebApi\apicache\ca.SQLite").LastWriteTime
-    Dashboard -Name 'Certificate Expiry' -AutoRefresh 300 {
-       
-        Section -Name "<h4>Corp | Certificate Expiry</h4><span>Last Updated: $DbwriteTimeca</span>" -BackgroundColor Cornsilk {
-         Table -DataTable $getca -DefaultSortColumn 'DaysUntilExpired' -HideFooter {
-            TableConditionalFormatting -Name 'DaysUntilExpired' -ComparisonType number -Operator le -Value 8 -Color white -BackgroundColor Red
-            TableConditionalFormatting -Name 'DaysUntilExpired' -ComparisonType number -Operator eq -Value 8 -Color Black -BackgroundColor Pink
-            TableConditionalFormatting -Name 'DaysUntilExpired' -ComparisonType number -Operator eq -Value 9 -Color Black -BackgroundColor Pink
-            TableConditionalFormatting -Name 'DaysUntilExpired' -ComparisonType number -Operator eq -Value 10 -Color Black -BackgroundColor Pink
-            TableConditionalFormatting -Name 'DaysUntilExpired' -ComparisonType number -Operator eq -Value 11 -Color Black -BackgroundColor Pink
-            TableConditionalFormatting -Name 'DaysUntilExpired' -ComparisonType number -Operator eq -Value 12 -Color Black -BackgroundColor Pink
-            TableConditionalFormatting -Name 'DaysUntilExpired' -ComparisonType number -Operator eq -Value 13 -Color Black -BackgroundColor Pink
-            TableConditionalFormatting -Name 'DaysUntilExpired' -ComparisonType number -Operator eq -Value 14 -Color Black -BackgroundColor Pink
-            TableConditionalFormatting -Name 'DaysUntilExpired' -ComparisonType number -Operator eq -Value 15 -Color Black -BackgroundColor Pink
-            TableConditionalFormatting -Name 'DaysUntilExpired' -ComparisonType number -Operator ge -Value 16 -Color Black -BackgroundColor PaleGreen
-        }
+$Database = "C:\WebApi\apicache\ca.SQLite"
+$getca = Invoke-SqliteQuery -DataSource $Database -Query "SELECT * FROM ca"
+$DbwriteTime = (Get-Item "C:\WebApi\apicache\ca.SQLite").LastWriteTime
+
+$Title = 'Dashboard | PKI-Expiry'
+$icon = 'https://pngmind.com/wp-content/uploads/2019/08/Linkedin-Logo-Png-Transparent-Background.png'
+$headertxt = "<h4>Corp Certificate Expiry Report</h4>"
+$TableTitle = "MSFT-CA1 Expiry Report"
+
+New-HTML -FavIcon $icon -TitleText $Title -Online -AutoRefresh 50 {
+    New-HTMLContent -HeaderText $headertxt {
+        New-HTMLTable -Title $TableTitle -DataTable $getca -HideFooter -PagingOptions @(6, 12, 24) {
+         TableConditionalFormatting -Name 'DaysUntilExpired' -ComparisonType number -Operator le -Value 8 -Color white -BackgroundColor Red
+         TableConditionalFormatting -Name 'DaysUntilExpired' -ComparisonType number -Operator ge -Value 8 -Color Black -BackgroundColor PaleGreen
+            
+        } 
     }
 }
+
