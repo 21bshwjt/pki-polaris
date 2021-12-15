@@ -8,6 +8,6 @@ Tested on Windows & Linux . Lots of sample HTML examples are available on ğ”¾ğ
 #### PswriteHTML : Build your Dashboard or Dynamic HTML report with ZERO html code
 #### PsSQLite : Database Management 
 
-Thanks to Deepak Dhami , Siva Nallagatla  & Chen V.
+Thanks to Deepak Dhami , Siva Nallagatla , Prateek Singh & Chen V.
 Special Thanks to Przemyslaw Klys (PswriteHTML Module Devoloper)
 
