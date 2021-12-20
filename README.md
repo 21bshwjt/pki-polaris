@@ -1,5 +1,5 @@
-﻿# MSFT Certificate Expiry Report | Dash-Board
- ###  Required Polaris(PS Module) , PSSQLite(PS Module) , PSWriteHtml(PS Module) & Active Directory gMSA(Optional).
+# MSFT Certificate Expiry Report | Dash-Board
+### Required Polaris(PS Module) , PSSQLite(PS Module) , PSWriteHtml(PS Module) & Active Directory gMSA(Optional).
  
 Certificate expiry monitoring is a CRITICAL for all the Orgs. Create your own Dashboard without write any HTML Code & grant the access by using AD security group to access thsoe pages 
  
