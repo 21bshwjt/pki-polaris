@@ -7,7 +7,8 @@
 Tested on Windows & Linux . Lots of sample HTML examples are available on 𝔾𝕚𝕥𝕙𝕦𝕓 !
 
 #### 2. Polaris : Web API Module - API will run as a service optionally gMSA(Group Managed Service Account) could be use with that service.
-Refer this MSFT Blog for gMSA : https://docs.microsoft.com/en-us/windows-server/security/group-managed-service-accounts/getting-started-with-group-managed-service-accounts
+Refer MSFT Blog for gMSA:
+https://docs.microsoft.com/en-us/windows-server/security/group-managed-service-accounts/getting-started-with-group-managed-service-accounts
 #### 3. PswriteHTML : Build your Dashboard or Dynamic HTML report with ZERO html code
 #### 4. PsSQLite : Database Management (PsSQLite is an optional component); Data store can be done into txt, csv , json & so on.
 #### 5. Certificate Teamplate names are hard coded & thsoe need to change manually; dynamic Template's name can be possible using PowerShell Advance Function.
