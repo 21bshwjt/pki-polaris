@@ -1,3 +1,4 @@
+#Replace the below instanse (bshwjt-dc01.bshwjt.biz\bshwjt-bshwjt-dc01-CA) based on your CA server name.
 function Get_CorpCertExpiry ($duedays=500,$CAlocation="bshwjt-dc01.bshwjt.biz\bshwjt-bshwjt-dc01-CA") 
         {
             $certs = @()
@@ -49,8 +50,9 @@ function Get_CorpCertExpiry ($duedays=500,$CAlocation="bshwjt-dc01.bshwjt.biz\bs
                 } until ($ColObj.Next() -eq -1)
                 Clear-Variable ColObj
                 $datediff = New-TimeSpan -Start ($now) -End ($cert."Certificate Expiration Date")
-                #$cert."Issued Common Name" + "|" + $datediff.Days + "|" + $cert."Certificate Expiration Date"+ "|" + $cert."Serial Number"+ "|" + $cert."Request ID" + "|" + $cert."Certificate Template"
-                #"Send email to : " + $cert."Issued Email Address"
+                #Certificate names & OID need to Change based on your env. 
+                #How too get thsoe details ?
+                #Login your CA server & run Get-CATemplate 
                 $RDPCert = "1.3.6.1.4.1.311.21.8.1182609.12583907.10568614.12547189.10026671.174.16355481.8775434"
                 $DirectoryEmailReplication = "1.3.6.1.4.1.311.21.8.14789085.16449854.11552433.11320432.4672385.5.1.29"
                 $DomainControllerAuthentication = "1.3.6.1.4.1.311.21.8.14789085.16449854.11552433.11320432.4672385.5.1.28"
@@ -87,4 +89,3 @@ function Get_CorpCertExpiry ($duedays=500,$CAlocation="bshwjt-dc01.bshwjt.biz\bs
 
 $getca = Get_CorpCertExpiry -EA SilentlyCOntinue
 $getca | ConvertTo-Json | Set-Content "C:\polaris\pki-polaris\apicache\cert.json"
-
