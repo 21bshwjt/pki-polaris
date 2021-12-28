@@ -1,13 +1,4 @@
-﻿#PSSQLITE
-
-    Import-Module PSSQLite | Out-Null
-    $Database = "C:\WebApi\apicache\ca.SQLite"
-    Invoke-SqliteQuery -DataSource $Database -Query "delete from ca" | Out-Null
-    
-    
-
-#get CA2 Details
-function Get_CorpCertExpiry ($duedays=500,$CAlocation="corp-dc02.msft.net\msft-ca1") 
+function Get_CorpCertExpiry ($duedays=500,$CAlocation="bshwjt-dc01.bshwjt.biz\bshwjt-bshwjt-dc01-CA") 
         {
             $certs = @()
             $now = (Get-Date).Date
@@ -61,9 +52,9 @@ function Get_CorpCertExpiry ($duedays=500,$CAlocation="corp-dc02.msft.net\msft-c
                 #$cert."Issued Common Name" + "|" + $datediff.Days + "|" + $cert."Certificate Expiration Date"+ "|" + $cert."Serial Number"+ "|" + $cert."Request ID" + "|" + $cert."Certificate Template"
                 #"Send email to : " + $cert."Issued Email Address"
                 $RDPCert = "1.3.6.1.4.1.311.21.8.1182609.12583907.10568614.12547189.10026671.174.16355481.8775434"
-                $DirectoryEmailReplication = "1.3.6.1.4.1.311.21.8.1182609.12583907.10568614.12547189.10026671.174.1.29"
-                $DomainControllerAuthentication = "1.3.6.1.4.1.311.21.8.1182609.12583907.10568614.12547189.10026671.174.1.28"
-                $KerberosAuthentication = "1.3.6.1.4.1.311.21.8.1182609.12583907.10568614.12547189.10026671.174.1.33"
+                $DirectoryEmailReplication = "1.3.6.1.4.1.311.21.8.14789085.16449854.11552433.11320432.4672385.5.1.29"
+                $DomainControllerAuthentication = "1.3.6.1.4.1.311.21.8.14789085.16449854.11552433.11320432.4672385.5.1.28"
+                $KerberosAuthentication = "1.3.6.1.4.1.311.21.8.14789085.16449854.11552433.11320432.4672385.5.1.33"
                 if (($cert."Certificate Template" -eq $RDPCert) -or `
                     ($cert."Certificate Template" -eq $DirectoryEmailReplication ) -or `
                     ($cert."Certificate Template" -eq $DomainControllerAuthentication) -or `
@@ -93,37 +84,7 @@ function Get_CorpCertExpiry ($duedays=500,$CAlocation="corp-dc02.msft.net\msft-c
             [GC]::Collect()
         }
 
-    $getca = Get_CorpCertExpiry -EA SilentlyCOntinue
 
-#http://ramblingcookiemonster.github.io/SQLite-and-PowerShell/
-#Import the module, create a data source and a table
-#Import-Module PSSQLite
- <#
-    $Database = "C:\WebApi\apicache\ca.SQLite"
-    
-    $Query = "CREATE TABLE ca (
-        CertificateName TEXT,
-        DaysUntilExpired TEXT,
-        ExpiryDate TEXT,
-        Serial TEXT PRIMARY KEY,
-        Template TEXT)"
-        #>
-        
- 
-    #SQLite will create Names.SQLite for us
-    #Invoke-SqliteQuery -Query $Query -DataSource $Database
-    #Invoke-SqliteQuery -DataSource $Database -Query "PRAGMA table_info(ca)" | FT
- 
-    $DataTable = $getca | ForEach-Object {
-    [pscustomobject]@{
-        CertificateName = $PSItem.CertificateName
-        DaysUntilExpired = $PSItem.DaysUntilExpired
-        ExpiryDate = $PSItem.ExpiryDate
-        Serial = $PSItem.Serial
-        Template = $PSItem.Template
-    }
-} | Out-DataTable
- 
-Invoke-SQLiteBulkCopy -DataTable $DataTable -DataSource $Database -Table ca -NotifyAfter 1000 -ConflictClause Ignore -Force -Verbose
-Invoke-SqliteQuery -DataSource $Database -Query "SELECT * FROM ca"
-#Copy-Item "C:\LinDev\cache\ca2.SQLite" -Destination $remotepath -Force -Verbose
+$getca = Get_CorpCertExpiry -EA SilentlyCOntinue
+$getca | ConvertTo-Json | Set-Content "C:\polaris\pki-polaris\apicache\cert.json"
+
