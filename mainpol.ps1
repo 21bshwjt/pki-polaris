@@ -10,7 +10,7 @@ Start-Transcript -Path "$($LoggingDirectory)\Polaris_$($dateformat).log" -Force
 $process = Get-Process -Id $pid
 $process.PriorityClass = 'RealTime'
 Start-Sleep -Seconds 5
-$HostName = 'corp-webapi01.msft.net'
+$HostName = ($env:COMPUTERNAME+"."+$env:USERDNSDOMAIN).ToLower()
 $Port = '81'
 Set-Location C:\WebApi
 #REGION STATIC ROUTES
