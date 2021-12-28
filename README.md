@@ -29,12 +29,12 @@ Special Thanks to Przemyslaw Klys (PswriteHTML Module Devoloper)
 ![alt CertExpiry](https://github.com/21bshwjt/pki-polaris/blob/63b395c292623f578c4d20042d6eefb3cb2dae56/Cert_Expiry.png)
 ##### Certificate names are missing into the above screenshot because of those are default published Certificates without having Subject name. 
 
-#### Implementation Instruction
+### Implementation Instruction
 ##### 1.	Install Polaris Module.
 ##### 2.	Install PsWriteHTML Module.
 ##### 3.	One AD service account/gMSA is needed for running a Windows scheduled task; that account needs to have CA server’s admin privileges. Code is present into the folder called “build-apicache”. Which will connect the CA server remotely & get the relevant data & export to a JSON file. Schedule task could be run once or twice in a day.
 ##### 4.	Polaris will run as a Windows service by using nssm. Code is present in gMSA folder. Download nssm - https://nssm.cc/download . Another service account/gMSA is needed to run the Windows service into the local server with admin privileges.
-##### Read Polaris documentation to understand how Polaris works.
+##### 5. Read Polaris documentation to understand how Polaris works.
  
 
 
