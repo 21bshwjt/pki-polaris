@@ -27,7 +27,7 @@ Special Thanks to Przemyslaw Klys (PswriteHTML Module Devoloper)
 [Wiki](https://21bshwjt.github.io/pki-polaris/)
 ### Build beautiful Dasboard like below without writing any HTML/JS code. 
 ![alt CertExpiry](https://github.com/21bshwjt/pki-polaris/blob/63b395c292623f578c4d20042d6eefb3cb2dae56/Cert_Expiry.png)
-##### Certificate names are missing into the above screenshot because of those are default published Certificates without having Subject name. 
+##### Certificate names are missing into the above screenshot because of those are default published Certificates without having Subject name. That will be not the case when new template will be created.
 
 ### Implementation Instruction
 ##### 1.	Install Polaris Module.
