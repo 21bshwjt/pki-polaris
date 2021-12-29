@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
    <head>
-      <title>HTML img Tag</title>
+      
    </head>
 
    <body>
