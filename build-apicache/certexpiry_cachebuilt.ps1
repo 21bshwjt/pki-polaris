@@ -1,4 +1,5 @@
 #Replace the below instanse (bshwjt-dc01.bshwjt.biz\bshwjt-bshwjt-dc01-CA) based on your CA server name.
+#Adjust $duedays varriable.
 function Get_CorpCertExpiry ($duedays=500,$CAlocation="bshwjt-dc01.bshwjt.biz\bshwjt-bshwjt-dc01-CA") 
         {
             $certs = @()
