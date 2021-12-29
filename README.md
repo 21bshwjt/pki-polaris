@@ -26,7 +26,7 @@ Special Thanks to Przemyslaw Klys (PswriteHTML Module Devoloper)
 
 [Wiki](https://21bshwjt.github.io/pki-polaris/)
 ### Build beautiful Dasboard like below without writing any HTML/JS code. 
-![alt CertExpiry](https://github.com/21bshwjt/pki-polaris/blob/63b395c292623f578c4d20042d6eefb3cb2dae56/Cert_Expiry.png)
+![alt text](https://github.com/21bshwjt/pki-polaris/blob/63b395c292623f578c4d20042d6eefb3cb2dae56/Cert_Expiry.png)
 ##### Certificate names are missing into the above screenshot because of those are default published Certificates without having Subject name. That will be not the case when new template will be created.
 
 ### Implementation Instruction
@@ -35,7 +35,8 @@ Special Thanks to Przemyslaw Klys (PswriteHTML Module Devoloper)
 ##### 3.	One AD service account/gMSA is needed for running a Windows scheduled task; that account needs to have CA server’s admin privileges. Code is present into the folder called “build-apicache”. Which will connect the CA server remotely & get the relevant data & export to a JSON file. Schedule task could be run once or twice in a day.
 ##### 4.	Polaris will run as a Windows service by using nssm. Code is present in gMSA folder. Download nssm - https://nssm.cc/download . Another service account/gMSA is needed to run the Windows service into the local server with admin privileges.
 ##### 5. Read Polaris documentation to understand how Polaris works.
- 
+##### 6. Change CA Server name and CA Template names & Template OIDs as per your env. Given a screenshot below.
+![alt text](https://github.com/21bshwjt/pki-polaris/blob/ad518d935a95c4d95a8f9103e5d72ca2a09175a0/CA.png)
 
 
 ### Please share your comments & feedback.
