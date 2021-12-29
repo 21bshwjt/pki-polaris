@@ -23,7 +23,7 @@ Polaris Page can be restricted by Active Directory security group & APIs can be 
 
 [Wiki](https://21bshwjt.github.io/pki-polaris/)
 ### Build beautiful Dasboard like below without writing any HTML/JS code.
-
+<h2></h2>
 <p><img src="https://github.com/21bshwjt/pki-polaris/blob/63b395c292623f578c4d20042d6eefb3cb2dae56/Cert_Expiry.png" width="700" height="320"></p>
 
 ##### Certificate names are missing into the above screenshot because of those are default published Certificates without having Subject name. That will be not the case when new template will be created.
@@ -35,7 +35,7 @@ Polaris Page can be restricted by Active Directory security group & APIs can be 
 ##### 4.	Polaris will run as a Windows service by using nssm. Code is present in gMSA folder. Download nssm - https://nssm.cc/download . Another service account/gMSA is needed to run the Windows service into the local server with admin privileges.
 ##### 5. Read Polaris documentation to understand how Polaris works.
 ##### 6. Change CA Server name and CA Template names & Template OIDs as per your env. Given a screenshot below.
-
+<h2></h2>
 <p><img src="https://github.com/21bshwjt/pki-polaris/blob/ad518d935a95c4d95a8f9103e5d72ca2a09175a0/CA.png" alt="CA" width="700" height="320">
 </p>
 
