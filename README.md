@@ -21,9 +21,6 @@ Refer MSFT Blog for gMSA:
 Polaris : Polaris is a micro-framework to build the Wep API/s; simmilar like Flash (Python) but Polaris is having very minimum feathers & that is worked with PowerShell.
 Polaris Page can be restricted by Active Directory security group & APIs can be publish using SSL for security .
 
-Thanks to Deepak Dhami , Siva Nallagatla , Prateek Singh & Chen V.
-Special Thanks to Przemyslaw Klys (PswriteHTML Module Devoloper)
-
 [Wiki](https://21bshwjt.github.io/pki-polaris/)
 ### Build beautiful Dasboard like below without writing any HTML/JS code. 
 ![alt text](https://github.com/21bshwjt/pki-polaris/blob/63b395c292623f578c4d20042d6eefb3cb2dae56/Cert_Expiry.png)
@@ -38,6 +35,7 @@ Special Thanks to Przemyslaw Klys (PswriteHTML Module Devoloper)
 ##### 6. Change CA Server name and CA Template names & Template OIDs as per your env. Given a screenshot below.
 ![alt text](https://github.com/21bshwjt/pki-polaris/blob/ad518d935a95c4d95a8f9103e5d72ca2a09175a0/CA.png)
 
+###### Thanks to Deepak Dhami , Siva Nallagatla , Prateek Singh & Chen V. Special Thanks to Przemyslaw Klys (PswriteHTML Module Devoloper).
 
 ### Please share your comments & feedback.
 
