@@ -26,6 +26,8 @@ Polaris Page can be restricted by Active Directory security group & APIs can be 
 
 <p><img src="https://github.com/21bshwjt/pki-polaris/blob/63b395c292623f578c4d20042d6eefb3cb2dae56/Cert_Expiry.png" alt="Certificate Expiry Dashboard" width="700" height="320"></p>
 
+<p><img src="/Cert_Expiry.png" alt="Certificate Expiry Dashboard" width="700" height="320"></p>
+
 ##### Certificate names are missing into the above screenshot because of those are default published Certificates without having Subject name. That will be not the case when new template will be created.
 
 ### Implementation Instruction
