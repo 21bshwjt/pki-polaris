@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html>
-   <head>
-      
-   </head>
-
-   <body>
-<h1><center>Certificate Expiry Monitoring DashBoard</Center></h1>
+# Certificate Expiry Monitoring DashBoard
 
 <span style="color: orange;">Certificate expiry monitoring is a CRITICAL. Create beautiful Dashboard without write any HTML Code & grant access by using AD security group to access those pages</span>.
 
@@ -45,6 +38,3 @@ Polaris Page can be restricted by Active Directory security group & APIs can be 
 ###### Thanks to Deepak Dhami , Siva Nallagatla , Prateek Singh & Chen V. Special Thanks to Przemyslaw Klys (PswriteHTML Module Devoloper).
 
 ### Please share your comments & feedback.
-
-</body>
-</html>
