@@ -22,8 +22,6 @@ Polaris : Polaris is a micro-framework to build the Wep API/s; simmilar like Fla
 Polaris Page can be restricted by Active Directory security group & APIs can be publish using SSL for security .
 
 [Wiki](https://21bshwjt.github.io/pki-polaris/)
-### Build beautiful Dasboard like below without writing any HTML/JS code.
-<p><img src="https://github.com/21bshwjt/pki-polaris/blob/63b395c292623f578c4d20042d6eefb3cb2dae56/Cert_Expiry.png" width="700" height="320"></p>
 
 ##### Certificate names are missing into the above screenshot because of those are default published Certificates without having Subject name. That will be not the case when new template will be created.
 
@@ -91,6 +89,9 @@ New-HTML -FavIcon $icon -TitleText $Title -Online -AutoRefresh 50 {
     }
 }
 ```
+### Build beautiful Dasboard like below without writing any HTML/JS code.
+<p><img src="https://github.com/21bshwjt/pki-polaris/blob/63b395c292623f578c4d20042d6eefb3cb2dae56/Cert_Expiry.png" width="700" height="320"></p>
+
 ## build-apicache
 
 <br>File called "certexpiry_cachebuilt.ps1" under "build-apicache" folder - **Scheduled tasks Code**.</br>
