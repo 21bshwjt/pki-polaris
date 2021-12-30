@@ -58,7 +58,7 @@ New-PolarisGetRoute -Path "/certexpiry" -Scriptblock {
     $Response.Send($pkiexp)
 }
 ```
-<br>Content of certexpiry.ps1 for restricted access through AD Security Group - **Pointing Subroute**</br>
+- Content of certexpiry.ps1 for restricted access through AD Security Group - **Pointing Subroute**
 ```powershell
 New-PolarisGetRoute -Path "/certexpiry" -Scriptblock { 
    if( -not $Request.User.IsInRole("Your-AD-Security_Group") ) {
