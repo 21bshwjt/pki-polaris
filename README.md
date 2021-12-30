@@ -28,7 +28,9 @@ Polaris Page can be restricted by Active Directory security group & APIs can be 
 ##### Certificate names are missing into the above screenshot because of those are default published Certificates without having Subject name. That will be not the case when new template will be created.
 
 ### Implementation Instruction
-##### 1.	Install Polaris Module.
+```powershell
+Install-Module -Name PSWriteHTML -AllowClobber -Force
+```
 ##### 2.	Install PsWriteHTML Module.
 ##### 3.	One AD service account/gMSA is needed for running a Windows scheduled task; that account needs to have CA server’s admin privileges. Code is present into the folder called “build-apicache”. Which will connect the CA server remotely & get the relevant data & export to a JSON file. Schedule task could be run once or twice in a day.
 ##### 4.	Polaris will run as a Windows service by using nssm. Code is present in gMSA folder. Download nssm - https://nssm.cc/download . Another service account/gMSA is needed to run the Windows service into the local server with admin privileges.
