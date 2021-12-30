@@ -114,7 +114,6 @@ ________________________________________________________________________________
 - [**Me@LinkedIn**](https://www.linkedin.com/in/bshwjt/)
 - Thanks to Deepak Dhami , Siva Nallagatla , Prateek Singh & Chen V. Special Thanks to Przemyslaw Klys (PswriteHTML Module Devoloper).
 ___________________________________________________________________________________________________________________
-### Please share your comments & feedback.
 
-- ![#c5f015](https://via.placeholder.com/15/c5f015/000000?text=+) `test`
+- ![#c5f015](https://via.placeholder.com/15/c5f015/000000?text=+) `**Please share your comments & feedback**.`
 
