@@ -41,8 +41,8 @@ Install-Module -Name PSWriteHTML -AllowClobber -Force
 <img src="https://github.com/21bshwjt/pki-polaris/blob/ad518d935a95c4d95a8f9103e5d72ca2a09175a0/CA.png" width="700" height="320">
 
 #### There are main three codes those are under routes , subroutes & build-apicache folders.
-**1. routes**
-<br>Content of certexpiry.ps1 - **Pointing Subroute**</br>
+**routes**
+<br>Content of certexpiry.ps1 for anonymous access - **Pointing Subroute**</br>
 ```powershell
 New-PolarisGetRoute -Path "/certexpiry" -Scriptblock {
     $pkiexp = . C:\WebApi\subroutes\certexpiry.ps1
@@ -50,7 +50,15 @@ New-PolarisGetRoute -Path "/certexpiry" -Scriptblock {
     $Response.Send($pkiexp)
 }
 ```
-**2. subroutes**
+<br>Content of certexpiry.ps1 for restricted access through AD Security Group - **Pointing Subroute**</br>
+```powershell
+New-PolarisGetRoute -Path "/certexpiry" -Scriptblock {
+    $pkiexp = . C:\WebApi\subroutes\certexpiry.ps1
+    $Response.SetContentType("text/html")
+    $Response.Send($pkiexp)
+}
+```
+**subroutes**
 <br>Content of certexpiry.ps1 - **Dashboard Build Code**</br>
 ```powershell
 [void](Import-Module PSWriteHTML)   
@@ -69,7 +77,7 @@ New-HTML -FavIcon $icon -TitleText $Title -Online -AutoRefresh 50 {
     }
 }
 ```
-**3. build-apicache**
+**build-apicache**
 <br>File called "certexpiry_cachebuilt.ps1" under "build-apicache" folder - **Scheduled tasks Code**.</br>
 
 ###### Thanks to Deepak Dhami , Siva Nallagatla , Prateek Singh & Chen V. Special Thanks to Przemyslaw Klys (PswriteHTML Module Devoloper).
