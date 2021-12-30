@@ -41,7 +41,7 @@ Install-Module -Name PSWriteHTML -AllowClobber -Force
 <img src="https://github.com/21bshwjt/pki-polaris/blob/ad518d935a95c4d95a8f9103e5d72ca2a09175a0/CA.png" width="700" height="320">
 
 - There are main three codes those are under routes , subroutes & build-apicache.
-- routes
+-- routes
 
 ```powershell
 New-PolarisGetRoute -Path "/certexpiry" -Scriptblock {
@@ -51,7 +51,7 @@ New-PolarisGetRoute -Path "/certexpiry" -Scriptblock {
 }
 ```
 
-- subroutes
+-- subroutes
 
 ###### Thanks to Deepak Dhami , Siva Nallagatla , Prateek Singh & Chen V. Special Thanks to Przemyslaw Klys (PswriteHTML Module Devoloper).
 
