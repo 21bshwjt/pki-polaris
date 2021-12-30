@@ -114,5 +114,5 @@ ________________________________________________________________________________
 
 ### Please share your comments & feedback.
 
-[Wiki](https://21bshwjt.github.io/pki-polaris/)
-[Me@LinkedIn](https://www.linkedin.com/in/bshwjt/)
+- [**Wiki**](https://21bshwjt.github.io/pki-polaris/)
+- [**Me@LinkedIn**](https://www.linkedin.com/in/bshwjt/)
