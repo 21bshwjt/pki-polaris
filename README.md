@@ -42,7 +42,7 @@ Install-Module -Name PSWriteHTML -AllowClobber -Force
 
 #### There are main three codes those are under routes , subroutes & build-apicache folders.
 **1. routes**
-<br>Content of certexpiry.ps1</br>
+<br>Content of certexpiry.ps1. **Pointing Subroute**</br>
 ```powershell
 New-PolarisGetRoute -Path "/certexpiry" -Scriptblock {
     $pkiexp = . C:\WebApi\subroutes\certexpiry.ps1
@@ -51,7 +51,7 @@ New-PolarisGetRoute -Path "/certexpiry" -Scriptblock {
 }
 ```
 **2. subroutes**
-<br>Content of certexpiry.ps1</br>
+<br>Content of certexpiry.ps1. **Dashboard Build Code**</br>
 ```powershell
 [void](Import-Module PSWriteHTML)   
 $Title = 'Dashboard | PKI-Expiry'
@@ -70,7 +70,7 @@ New-HTML -FavIcon $icon -TitleText $Title -Online -AutoRefresh 50 {
 }
 ```
 **3. build-apicache**
-<br>File called "certexpiry_cachebuilt.ps1" under "build-apicache" folder </br>
+<br>File called "certexpiry_cachebuilt.ps1" under "build-apicache" folder. **Scheduled tasks Code**.</br>
 
 ###### Thanks to Deepak Dhami , Siva Nallagatla , Prateek Singh & Chen V. Special Thanks to Przemyslaw Klys (PswriteHTML Module Devoloper).
 
