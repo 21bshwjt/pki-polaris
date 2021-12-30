@@ -110,9 +110,9 @@ New-HTML -FavIcon $icon -TitleText $Title -Online -AutoRefresh 50 {
 <img src="https://github.com/21bshwjt/pki-polaris/blob/ad518d935a95c4d95a8f9103e5d72ca2a09175a0/CA.png" width="700" height="320">
 _______________________________________________________________________________________________________________________________________________
 
-#### Thanks to Deepak Dhami , Siva Nallagatla , Prateek Singh & Chen V. Special Thanks to Przemyslaw Klys (PswriteHTML Module Devoloper).
-
-### Please share your comments & feedback.
-
 - [**Wiki**](https://21bshwjt.github.io/pki-polaris/)
 - [**Me@LinkedIn**](https://www.linkedin.com/in/bshwjt/)
+- Thanks to Deepak Dhami , Siva Nallagatla , Prateek Singh & Chen V. Special Thanks to Przemyslaw Klys (PswriteHTML Module Devoloper).
+_______________________________________________________________________________________________________________________________________________
+### Please share your comments & feedback.
+
