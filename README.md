@@ -29,6 +29,7 @@ Polaris Page can be restricted by Active Directory security group & APIs can be 
 ```powershell
 mkdir C:\WebApi\Logs
 ```
+Clone the Repo and copy the entire contents from 'pki-polaris' folder to 'WebApi' folder. 
 ```powershell
 Install-Module -Name Polaris -AllowClobber -Force
 ```
