@@ -6,11 +6,11 @@
 Polaris Page can be restricted by Active Directory security group & APIs can be publish using SSL for security .
 
 ## Prerequisites
-   ### 1.[Polaris](https://github.com/PowerShell/Polaris)
-   ### 2.[PsWriteHTML](https://github.com/EvotecIT/PSWriteHTML)
-   ### 3.[gMSA (Optional)](https://docs.microsoft.com/en-us/windows-server/security/group-managed-service-accounts/getting-started-with-group-managed-service-accounts/)
-   ### 4. AD Security group for RBAC.
-   ### 5. Certificate for SSL.
+- 1.[Polaris](https://github.com/PowerShell/Polaris)
+- 2.[PsWriteHTML](https://github.com/EvotecIT/PSWriteHTML)
+- 3.[gMSA (Optional)](https://docs.microsoft.com/en-us/windows-server/security/group-managed-service-accounts/getting-started-with-group-managed-service-accounts/)
+- 4 AD Security group for RBAC.
+- 5 Certificate for SSL.
    
 #### 1. 𝗣𝘀𝗪𝗿𝗶𝘁𝗲𝗵𝘁𝗺𝗹 with 𝗣𝗼𝗹𝗮𝗿𝗶𝘀. Both the modules are available in PowerShell Gallery . GIven the links above. Build your Dashboard or Dynamic HTML report with ZERO html code . All feathers are available those are required for a Standard Dashboard. Like pagination , conditional formatting, csv export & many more .
 Tested on Windows & Linux . Lots of sample HTML examples are available on **Github** !
