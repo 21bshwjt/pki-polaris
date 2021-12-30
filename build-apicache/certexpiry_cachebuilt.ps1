@@ -89,4 +89,4 @@ function Get_CorpCertExpiry ($duedays=500,$CAlocation="bshwjt-dc01.bshwjt.biz\bs
 
 
 $getca = Get_CorpCertExpiry -EA SilentlyCOntinue
-$getca | ConvertTo-Json | Set-Content "C:\polaris\pki-polaris\apicache\cert.json"
+$getca | ConvertTo-Json | Set-Content "C:\WebApi\apicache\cert.json"
