@@ -1,6 +1,6 @@
 # Certificate Expiry Monitoring DashBoard
 
-*Certificate expiry monitoring is a CRITICAL. Create beautiful Dashboard without write any HTML Code & grant access by using AD security group to access those pages*.
+**Certificate expiry monitoring is a CRITICAL. Create beautiful Dashboard without write any HTML Code & grant access by using AD security group to access those pages**.
 
 ## Prerequisites
    ### 1.[Polaris](https://github.com/PowerShell/Polaris)
