@@ -40,8 +40,8 @@ Install-Module -Name PSWriteHTML -AllowClobber -Force
 - Change CA Server name and CA Template names & Template OIDs as per your env. Given a screenshot below.
 <img src="https://github.com/21bshwjt/pki-polaris/blob/ad518d935a95c4d95a8f9103e5d72ca2a09175a0/CA.png" width="700" height="320">
 
-#### There are main three codes those are under routes , subroutes & build-apicache.
-*routes*
+#### There are main three codes those are under routes , subroutes & build-apicache folders.
+**routes**
 
 ```powershell
 New-PolarisGetRoute -Path "/certexpiry" -Scriptblock {
@@ -51,7 +51,24 @@ New-PolarisGetRoute -Path "/certexpiry" -Scriptblock {
 }
 ```
 
-*subroutes*
+**subroutes**
+```powershell
+[void](Import-Module PSWriteHTML)   
+$Title = 'Dashboard | PKI-Expiry'
+$icon = 'https://pngmind.com/wp-content/uploads/2019/08/Linkedin-Logo-Png-Transparent-Background.png'
+$headertxt = "<h4>Corp Certificate Expiry Report</h4>"
+$TableTitle = "MSFT-CA1 Expiry Report"
+$data = Get-Content "C:\polaris\pki-polaris\apicache\cert.json" | ConvertFrom-Json
+New-HTML -FavIcon $icon -TitleText $Title -Online -AutoRefresh 50 {
+    New-HTMLContent -HeaderText $headertxt {
+        New-HTMLTable -Title $TableTitle -DataTable $data -HideFooter -PagingOptions @(6, 12, 24) {
+         TableConditionalFormatting -Name 'DaysUntilExpired' -ComparisonType number -Operator le -Value 8 -Color white -BackgroundColor Red
+         TableConditionalFormatting -Name 'DaysUntilExpired' -ComparisonType number -Operator ge -Value 8 -Color Black -BackgroundColor PaleGreen
+            
+        } 
+    }
+}
+```
 
 ###### Thanks to Deepak Dhami , Siva Nallagatla , Prateek Singh & Chen V. Special Thanks to Przemyslaw Klys (PswriteHTML Module Devoloper).
 
