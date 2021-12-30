@@ -52,11 +52,21 @@ New-PolarisGetRoute -Path "/certexpiry" -Scriptblock {
 ```
 <br>Content of certexpiry.ps1 for restricted access through AD Security Group - **Pointing Subroute**</br>
 ```powershell
-New-PolarisGetRoute -Path "/certexpiry" -Scriptblock {
-    $pkiexp = . C:\WebApi\subroutes\certexpiry.ps1
-    $Response.SetContentType("text/html")
-    $Response.Send($pkiexp)
-}
+New-PolarisGetRoute -Path "/certexpiry" -Scriptblock { 
+   if( -not $Request.User.IsInRole("Your-AD-Security_Group") ) {
+      $Result = [pscustomobject]@{
+            Title = "Access Denied!"
+            Message = "Error: HTTP Error: 401, Request had invalid authentication credentials!"
+            Help    = "Contact xyz!"
+            Email   = "admins@contoso.com"
+        }
+        $Response.Send(($Result | ConvertTo-Json))
+   } else {
+      $pkiexp = . C:\WebApi\subroutes\certexpiry.ps1
+      $Response.SetContentType("text/html")
+      $Response.Send($pkiexp)
+   } 
+} 
 ```
 **subroutes**
 <br>Content of certexpiry.ps1 - **Dashboard Build Code**</br>
