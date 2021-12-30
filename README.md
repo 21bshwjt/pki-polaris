@@ -10,7 +10,7 @@
    ### 5. Certificate for SSL.
    
 #### 1. 𝗣𝘀𝗪𝗿𝗶𝘁𝗲𝗵𝘁𝗺𝗹 with 𝗣𝗼𝗹𝗮𝗿𝗶𝘀. Both the modules are available in PowerShell Gallery . GIven the links above. Build your Dashboard or Dynamic HTML report with ZERO html code . All feathers are available those are required for a Standard Dashboard. Like pagination , conditional formatting, csv export & many more .
-Tested on Windows & Linux . Lots of sample HTML examples are available on 𝔾𝕚𝕥𝕙𝕦𝕓 !
+Tested on Windows & Linux . Lots of sample HTML examples are available on **Github** !
 
 #### 2. Polaris : Web API Module - API will run as a service optionally gMSA(Group Managed Service Account) could be use with that service.
 Refer MSFT Blog for gMSA:
@@ -44,8 +44,6 @@ Install-Module -Name PSWriteHTML -AllowClobber -Force
 - One AD service account/gMSA is needed for running a Windows scheduled task; that account needs to have CA server’s admin privileges. Code is present into the folder called “build-apicache”. Which will connect the CA server remotely & get the relevant data & export to a JSON file. Schedule task could be run once or twice in a day.
 - Polaris will run as a Windows service by using nssm. Code is present in gMSA folder. Download nssm - https://nssm.cc/download . Another service account/gMSA is needed to run the Windows service into the local server with admin privileges.
 - Read Polaris documentation to understand how Polaris works.
-- Change CA Server name and CA Template names & Template OIDs as per your env. Given a screenshot below.
-<img src="https://github.com/21bshwjt/pki-polaris/blob/ad518d935a95c4d95a8f9103e5d72ca2a09175a0/CA.png" width="700" height="320">
 
 #### There are three codes those are created the Dashboard sucessfully . Those are under 'routes' , 'subroutes' & 'build-apicache' folders.
 #### mainpol.ps1 will run the API & that is the only file that needs to be running by Windows Service or Scheduled tasks. Remaining files will be called during the runtime by mainpol.ps1. use VSCode or ISE for testing . Create Windows Service associated with mainpol.ps1 once all are going good.   
@@ -106,6 +104,8 @@ New-HTML -FavIcon $icon -TitleText $Title -Online -AutoRefresh 50 {
 ## build-apicache
 
 <br>File called "certexpiry_cachebuilt.ps1" under "build-apicache" folder - **Scheduled tasks Code**.</br>
+Change CA Server name and CA Template names & Template OIDs as per your env. Given a screenshot below.
+<img src="https://github.com/21bshwjt/pki-polaris/blob/ad518d935a95c4d95a8f9103e5d72ca2a09175a0/CA.png" width="700" height="320">
 
 ## Thanks to Deepak Dhami , Siva Nallagatla , Prateek Singh & Chen V. Special Thanks to Przemyslaw Klys (PswriteHTML Module Devoloper).
 
