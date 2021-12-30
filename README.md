@@ -115,5 +115,5 @@ ________________________________________________________________________________
 - Thanks to Deepak Dhami , Siva Nallagatla , Prateek Singh & Chen V. Special Thanks to Przemyslaw Klys (PswriteHTML Module Devoloper).
 ___________________________________________________________________________________________________________________
 
-![#1589F0](https://via.placeholder.com/15/c5f015/000000?text=+) `Please Share Your Comments & Feedback.`
+![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) `Please Share Your Comments & Feedback.`
 
