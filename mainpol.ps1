@@ -1,6 +1,4 @@
-﻿#http://corp-webapi01:81/home
-Import-Module Polaris
-#Import-Module PSHTML
+[void](Import-Module Polaris)
 Set-Location C:\WebApi
 $VerbosePreference = 'Continue' # Comment this to stop transcript generation
 $dateformat = Get-Date -format 'MM.dd.yyyy.HH.mm.ss' # modified this to reflect the exact time in 24 hour format
