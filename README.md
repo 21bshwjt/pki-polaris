@@ -27,6 +27,9 @@ Polaris Page can be restricted by Active Directory security group & APIs can be 
 
 ### Implementation Instruction
 ```powershell
+mkdir C:\WebApi\Logs
+```
+```powershell
 Install-Module -Name Polaris -AllowClobber -Force
 ```
 ```powershell
