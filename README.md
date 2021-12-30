@@ -40,7 +40,8 @@ Install-Module -Name PSWriteHTML -AllowClobber -Force
 - Change CA Server name and CA Template names & Template OIDs as per your env. Given a screenshot below.
 <img src="https://github.com/21bshwjt/pki-polaris/blob/ad518d935a95c4d95a8f9103e5d72ca2a09175a0/CA.png" width="700" height="320">
 
-#### There are main three codes those are under routes , subroutes & build-apicache folders.
+#### There are three codes those are created the Dashboard sucessfully . Those are under 'routes' , 'subroutes' & 'build-apicache' folders.
+#### mainpol.ps1 will run the API using Windows Service. 
 **routes**
 <br>Content of certexpiry.ps1 for anonymous access - **Pointing Subroute**</br>
 ```powershell
