@@ -11,7 +11,7 @@ Polaris Page can be restricted by Active Directory security group & APIs can be 
 - [gMSA (Optional)](https://docs.microsoft.com/en-us/windows-server/security/group-managed-service-accounts/getting-started-with-group-managed-service-accounts/)
 - AD Security group for RBAC.
 - Certificate for SSL.
-- Git agent.
+- Git.
 
 ## Description
 
@@ -22,8 +22,6 @@ Tested on Windows & Linux . Lots of sample HTML examples are available on **Gith
 [gMSA](https://docs.microsoft.com/en-us/windows-server/security/group-managed-service-accounts/getting-started-with-group-managed-service-accounts/)
 - **PswriteHTML** : Build your Dashboard or Dynamic HTML report with ZERO html code
 - Certificate Teamplate names are hard coded & thsoe need to change manually; dynamic Template's name can be possible using PowerShell Advance Function.
-
-[Wiki](https://21bshwjt.github.io/pki-polaris/)
 
 ## Implementation Instruction
 
@@ -115,3 +113,6 @@ ________________________________________________________________________________
 #### Thanks to Deepak Dhami , Siva Nallagatla , Prateek Singh & Chen V. Special Thanks to Przemyslaw Klys (PswriteHTML Module Devoloper).
 
 ### Please share your comments & feedback.
+
+[Wiki](https://21bshwjt.github.io/pki-polaris/)
+[Me@LinkedIn](https://www.linkedin.com/in/bshwjt/)
