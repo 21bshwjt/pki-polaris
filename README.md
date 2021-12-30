@@ -21,7 +21,7 @@ Tested on Windows & Linux . Lots of sample HTML examples are available on **Gith
 - Refer MSFT Blog for gMSA:
 [gMSA](https://docs.microsoft.com/en-us/windows-server/security/group-managed-service-accounts/getting-started-with-group-managed-service-accounts/)
 - **PswriteHTML** : Build your Dashboard or Dynamic HTML report with ZERO html code
-- Certificate Teamplate names are hard coded & thsoe need to change manually; dynamic Template's name can be possible using PowerShell Advance Function.
+- Certificate Teamplate names are hard coded & those need to change manually; dynamic Template's name can be possible using PowerShell Advance Function.
 
 ## Implementation Instruction
 
