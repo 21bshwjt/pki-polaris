@@ -42,7 +42,7 @@ Install-Module -Name PSWriteHTML -AllowClobber -Force
 
 #### There are main three codes those are under routes , subroutes & build-apicache folders.
 **routes**
-
+Content of certexpiry.ps1
 ```powershell
 New-PolarisGetRoute -Path "/certexpiry" -Scriptblock {
     $pkiexp = . C:\WebApi\subroutes\certexpiry.ps1
@@ -50,8 +50,8 @@ New-PolarisGetRoute -Path "/certexpiry" -Scriptblock {
     $Response.Send($pkiexp)
 }
 ```
-
 **subroutes**
+certexpiry.ps1
 ```powershell
 [void](Import-Module PSWriteHTML)   
 $Title = 'Dashboard | PKI-Expiry'
