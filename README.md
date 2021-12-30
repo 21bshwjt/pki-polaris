@@ -12,6 +12,7 @@ Polaris Page can be restricted by Active Directory security group & APIs can be 
 - AD Security group for RBAC (Optional).
 - Certificate for SSL (Optional).
 - Git.
+
 ![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) `All optional componenets are used for security purpose. .`
 
 ## Description
