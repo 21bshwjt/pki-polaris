@@ -13,7 +13,7 @@ Polaris Page can be restricted by Active Directory security group & APIs can be 
 - Certificate for SSL (Optional).
 - Git.
 
-![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) `All optional componenets are used for security purpose. .`
+![#c5f015](https://via.placeholder.com/15/c5f015/000000?text=+) `All optional componenets are used for security purpose.`
 
 ## Description
 
