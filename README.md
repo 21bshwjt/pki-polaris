@@ -95,6 +95,6 @@ New-HTML -FavIcon $icon -TitleText $Title -Online -AutoRefresh 50 {
 
 <br>File called "certexpiry_cachebuilt.ps1" under "build-apicache" folder - **Scheduled tasks Code**.</br>
 
-##### Thanks to Deepak Dhami , Siva Nallagatla , Prateek Singh & Chen V. Special Thanks to Przemyslaw Klys (PswriteHTML Module Devoloper).
+## Thanks to Deepak Dhami , Siva Nallagatla , Prateek Singh & Chen V. Special Thanks to Przemyslaw Klys (PswriteHTML Module Devoloper).
 
 ### Please share your comments & feedback.
