@@ -11,17 +11,17 @@ Polaris Page can be restricted by Active Directory security group & APIs can be 
 - [gMSA (Optional)](https://docs.microsoft.com/en-us/windows-server/security/group-managed-service-accounts/getting-started-with-group-managed-service-accounts/)
 - AD Security group for RBAC.
 - Certificate for SSL.
+- Git agent.
 
 ## Description
 
-#### 1. 𝗣𝘀𝗪𝗿𝗶𝘁𝗲𝗵𝘁𝗺𝗹 with 𝗣𝗼𝗹𝗮𝗿𝗶𝘀. Both the modules are available in PowerShell Gallery . GIven the links above. Build your Dashboard or Dynamic HTML report with ZERO html code . All feathers are available those are required for a Standard Dashboard. Like pagination , conditional formatting, csv export & many more .
+- 𝗣𝘀𝗪𝗿𝗶𝘁𝗲𝗵𝘁𝗺𝗹 with 𝗣𝗼𝗹𝗮𝗿𝗶𝘀. Both the modules are available in PowerShell Gallery . GIven the links above. Build your Dashboard or Dynamic HTML report with ZERO html code . All feathers are available those are required for a Standard Dashboard. Like pagination , conditional formatting, csv export & many more .
 Tested on Windows & Linux . Lots of sample HTML examples are available on **Github** !
-
-#### 2. Polaris : Web API Module - API will run as a service optionally gMSA(Group Managed Service Account) could be use with that service.
-Refer MSFT Blog for gMSA:
+- Polaris : Web API Module - API will run as a service optionally gMSA(Group Managed Service Account) could be use with that service.
+- Refer MSFT Blog for gMSA:
 [gMSA](https://docs.microsoft.com/en-us/windows-server/security/group-managed-service-accounts/getting-started-with-group-managed-service-accounts/)
-#### 3. PswriteHTML : Build your Dashboard or Dynamic HTML report with ZERO html code
-#### 4. Certificate Teamplate names are hard coded & thsoe need to change manually; dynamic Template's name can be possible using PowerShell Advance Function.
+- **PswriteHTML** : Build your Dashboard or Dynamic HTML report with ZERO html code
+- Certificate Teamplate names are hard coded & thsoe need to change manually; dynamic Template's name can be possible using PowerShell Advance Function.
 
 [Wiki](https://21bshwjt.github.io/pki-polaris/)
 
