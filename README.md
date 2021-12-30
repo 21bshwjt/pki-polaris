@@ -50,7 +50,7 @@ Install-Module -Name PSWriteHTML -AllowClobber -Force
 
 ## routes
 
-- Content of certexpiry.ps1 for anonymous access - **Pointing Subroute**
+- Content of **certexpiry.ps1** for anonymous access - **Pointing Subroute**
 ```powershell
 New-PolarisGetRoute -Path "/certexpiry" -Scriptblock {
     $pkiexp = . C:\WebApi\subroutes\certexpiry.ps1
@@ -58,7 +58,7 @@ New-PolarisGetRoute -Path "/certexpiry" -Scriptblock {
     $Response.Send($pkiexp)
 }
 ```
-- Content of certexpiry.ps1 for restricted access through AD Security Group - **Pointing Subroute**
+- Content of **certexpiry.ps1** for restricted access through AD Security Group - **Pointing Subroute**
 ```powershell
 New-PolarisGetRoute -Path "/certexpiry" -Scriptblock { 
    if( -not $Request.User.IsInRole("Your-AD-Security_Group") ) {
@@ -78,7 +78,7 @@ New-PolarisGetRoute -Path "/certexpiry" -Scriptblock {
 ```
 ## subroutes
 
-- Content of certexpiry.ps1 - **Dashboard Build Code**
+- Content of **certexpiry.ps1** - **Dashboard Build Code**
 ```powershell
 [void](Import-Module PSWriteHTML)   
 $Title = 'Dashboard | PKI-Expiry'
@@ -103,7 +103,7 @@ New-HTML -FavIcon $icon -TitleText $Title -Online -AutoRefresh 50 {
 
 ## build-apicache
 
-- File called "certexpiry_cachebuilt.ps1" under "build-apicache" folder - **Scheduled tasks Code**.
+- File called **certexpiry_cachebuilt.ps1** under "build-apicache" folder - **Scheduled tasks Code**.
 - Change CA Server name and CA Template names & Template OIDs into the Code as per your env. Given a screenshot below.
 <img src="https://github.com/21bshwjt/pki-polaris/blob/ad518d935a95c4d95a8f9103e5d72ca2a09175a0/CA.png" width="700" height="320">
 
