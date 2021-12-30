@@ -46,7 +46,7 @@ Install-Module -Name PSWriteHTML -AllowClobber -Force
 - Read Polaris documentation to understand how Polaris works.
 
 #### There are three codes those are created the Dashboard sucessfully . Those are under 'routes' , 'subroutes' & 'build-apicache' folders.
-#### mainpol.ps1 will run the API & that is the only file that needs to be running by Windows Service or Scheduled tasks. Remaining files will be called during the runtime by mainpol.ps1. use VSCode or ISE for testing . Create Windows Service associated with mainpol.ps1 once all are going good.   
+#### mainpol.ps1 will run the API & that is the only file that needs to be running by Windows Service or Scheduled tasks. Remaining files will be called during the runtime by mainpol.ps1. Use VSCode or ISE for testing . Create Windows Service associated with mainpol.ps1 once all are going good.   
 
 ## routes
 
