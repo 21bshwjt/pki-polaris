@@ -50,7 +50,7 @@ Install-Module -Name PSWriteHTML -AllowClobber -Force
 
 ## routes
 
-<br>Content of certexpiry.ps1 for anonymous access - **Pointing Subroute**</br>
+- Content of certexpiry.ps1 for anonymous access - **Pointing Subroute**
 ```powershell
 New-PolarisGetRoute -Path "/certexpiry" -Scriptblock {
     $pkiexp = . C:\WebApi\subroutes\certexpiry.ps1
@@ -78,7 +78,7 @@ New-PolarisGetRoute -Path "/certexpiry" -Scriptblock {
 ```
 ## subroutes
 
-Content of certexpiry.ps1 - **Dashboard Build Code**
+- Content of certexpiry.ps1 - **Dashboard Build Code**
 ```powershell
 [void](Import-Module PSWriteHTML)   
 $Title = 'Dashboard | PKI-Expiry'
