@@ -41,7 +41,7 @@ Install-Module -Name PSWriteHTML -AllowClobber -Force
 <img src="https://github.com/21bshwjt/pki-polaris/blob/ad518d935a95c4d95a8f9103e5d72ca2a09175a0/CA.png" width="700" height="320">
 
 #### There are main three codes those are under routes , subroutes & build-apicache folders.
-**routes**
+**1. routes**
 <br>Content of certexpiry.ps1</br>
 ```powershell
 New-PolarisGetRoute -Path "/certexpiry" -Scriptblock {
@@ -50,7 +50,7 @@ New-PolarisGetRoute -Path "/certexpiry" -Scriptblock {
     $Response.Send($pkiexp)
 }
 ```
-**subroutes**
+**2. subroutes**
 <br>Content of certexpiry.ps1</br>
 ```powershell
 [void](Import-Module PSWriteHTML)   
@@ -69,7 +69,7 @@ New-HTML -FavIcon $icon -TitleText $Title -Online -AutoRefresh 50 {
     }
 }
 ```
-**build-apicache**
+**3. build-apicache**
 <br>File called "certexpiry_cachebuilt.ps1" under "build-apicache" folder </br>
 
 ###### Thanks to Deepak Dhami , Siva Nallagatla , Prateek Singh & Chen V. Special Thanks to Przemyslaw Klys (PswriteHTML Module Devoloper).
