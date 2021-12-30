@@ -32,6 +32,10 @@ mkdir C:\WebApi\Logs
 Copy-Item C:\temp\pki-polaris\* -Recurse -Force C:\WebApi\ -Verbose
 ```
 ```powershell
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Force
+```
+```powershell
 Install-Module -Name Polaris -AllowClobber -Force
 ```
 ```powershell
