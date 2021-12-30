@@ -9,7 +9,7 @@ Polaris Page can be restricted by Active Directory security group & APIs can be 
 - [Polaris](https://github.com/PowerShell/Polaris)
 - [PsWriteHTML](https://github.com/EvotecIT/PSWriteHTML)
 - [gMSA (Optional)](https://docs.microsoft.com/en-us/windows-server/security/group-managed-service-accounts/getting-started-with-group-managed-service-accounts/)
-- AD Security group for RBAC.
+- AD Security group for RBAC (Optional).
 - Certificate for SSL.
 - Git.
 
