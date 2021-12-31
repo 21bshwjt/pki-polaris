@@ -15,6 +15,7 @@ Invoke-Expression -Command "Netsh http delete sslcert ipport=0.0.0.0:$($Port)"
 Invoke-Expression -Command "Netsh http delete sslcert ipport=$($get_ip):$($Port)"
 #Start-Sleep -Seconds 5
 $AppID = "{" + $(New-Guid) + "}"
+#Change IP & Certificate Thumprint
 Invoke-Expression -Command "netsh http add sslcert ipport=0.0.0.0:$($Port) certhash=$get_thumbprint appid='$($AppID)' certstorename=MY"
 Invoke-Expression -Command "netsh http add sslcert ipport=$($get_ip):$($Port) certhash=$get_thumbprint appid='$($AppID)' certstorename=MY"
 Set-Location C:\WebApi
@@ -22,10 +23,16 @@ Set-Location C:\WebApi
 .\routes\home.ps1
 .\routes\certexpiry.ps1
 .\routes\employees.ps1
+
+#Get-PolarisRoute | Select-Object Path,Method
+
 #ENDREGION
 Start-Polaris -Port $Port -MaxRunspaces 5 -Debug -Verbose -Https -Auth IntegratedWindowsAuthentication
+#Showing the Routes
+Get-PolarisRoute | Select-Object Path,Method
 
 while ($true) {
     Start-Sleep -Milliseconds 10
 }
+
 Stop-Transcript
