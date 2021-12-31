@@ -125,7 +125,10 @@ New-HTML -FavIcon $icon -TitleText $Title -Online -AutoRefresh 50 {
 
 ## Enable SSL
 - Enable the SSL once API is running fine. Replace the mainpol.ps1 from **enable_ssl** folder. **Server IP** & **Certificate thumbprint** are need to change from that code. 
-- Read the comments section carefully.     
+- Read the comments section carefully.   
+
+## HTML
+- Bootstrap templates have been used for static HTML pages. [Documentation](https://getbootstrap.com/docs/5.1/getting-started/introduction/).  
 
 ___________________________________________________________________________________________________________________
 
