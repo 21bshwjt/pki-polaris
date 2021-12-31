@@ -127,9 +127,11 @@ New-HTML -FavIcon $icon -TitleText $Title -Online -AutoRefresh 50 {
 
 ## Enable SSL
 - One Certificate is needed for SSL binding & import that Certificate into API server computer store. 
-- Enable the SSL once API is running fine. Replace the mainpol.ps1 from **enable_ssl** folder. **Server IP** & **Certificate thumbprint** are need to change from that code. 
-- Read the comments section carefully from **enable_ssl/mainpol.ps1**.   
+- Enable the SSL once API is running fine. Replace the mainpol.ps1 from **enable_ssl** folder. 
+- Put a Friendly name into the same Certificate & change the same into the code (line nos. 12).
+<img src="https://github.com/21bshwjt/pki-polaris/blob/86f7f1e51bbab5e3e28b46a7dc7a0327ff8081dc/Screenshots/webapicert.JPG" width="400" height="150">
 
+ 
 ___________________________________________________________________________________________________________________
 
 - [**Wiki**](https://21bshwjt.github.io/pki-polaris/)
