@@ -7,6 +7,7 @@ $data = Get-Content "C:\polaris\pki-polaris\apicache\cert.json" | ConvertFrom-Js
 New-HTML -FavIcon $icon -TitleText $Title -Online -AutoRefresh 50 {
     New-HTMLContent -HeaderText $headertxt {
         New-HTMLTable -Title $TableTitle -DataTable $data -HideFooter -PagingOptions @(12, 24) {
+         #Conditional Formatting
          TableConditionalFormatting -Name 'DaysUntilExpired' -ComparisonType number -Operator le -Value 364 -Color white -BackgroundColor Red
          TableConditionalFormatting -Name 'DaysUntilExpired' -ComparisonType number -Operator ge -Value 363 -Color Black -BackgroundColor PaleGreen
             
