@@ -116,6 +116,10 @@ New-HTML -FavIcon $icon -TitleText $Title -Online -AutoRefresh 50 {
 - Default home page should work without making any change into the Code once above steps will be done.
 - Home page URL : http://server-fqdn:81/home
 
+## API Port
+
+- Port can be changed into **mailpol.ps1** .
+
 ___________________________________________________________________________________________________________________
 
 - [**Wiki**](https://21bshwjt.github.io/pki-polaris/)
