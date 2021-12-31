@@ -6,11 +6,10 @@ $TableTitle = "MSFT-CA1 Expiry Report"
 $data = Get-Content "C:\polaris\pki-polaris\apicache\cert.json" | ConvertFrom-Json
 New-HTML -FavIcon $icon -TitleText $Title -Online -AutoRefresh 50 {
     New-HTMLContent -HeaderText $headertxt {
-        New-HTMLTable -Title $TableTitle -DataTable $data -HideFooter -PagingOptions @(6, 12, 24) {
-         TableConditionalFormatting -Name 'DaysUntilExpired' -ComparisonType number -Operator le -Value 8 -Color white -BackgroundColor Red
-         TableConditionalFormatting -Name 'DaysUntilExpired' -ComparisonType number -Operator ge -Value 8 -Color Black -BackgroundColor PaleGreen
+        New-HTMLTable -Title $TableTitle -DataTable $data -HideFooter -PagingOptions @(12, 24) {
+         TableConditionalFormatting -Name 'DaysUntilExpired' -ComparisonType number -Operator le -Value 364 -Color white -BackgroundColor Red
+         TableConditionalFormatting -Name 'DaysUntilExpired' -ComparisonType number -Operator ge -Value 363 -Color Black -BackgroundColor PaleGreen
             
         } 
     }
 }
-
