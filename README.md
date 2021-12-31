@@ -116,6 +116,8 @@ New-HTML -FavIcon $icon -TitleText $Title -Online -AutoRefresh 50 {
 - Default home page should work without making any change into the Code once above steps will be done.
 - Home page URL : http://server-fqdn:81/home
 <img src="https://github.com/21bshwjt/pki-polaris/blob/67b98f3d226783ff0def041384476138fab83352/home.JPG" width="700" height="200"></p>
+- Another API should work with PSWriteHTML; link : http://server-fqdn:81/employees
+<img src="https://github.com/21bshwjt/pki-polaris/blob/fe553e01b2f5569d716849b6dea34b10df4d9a26/emp.JPG" width="700" height="200"></p>
 
 ## API Port
 
