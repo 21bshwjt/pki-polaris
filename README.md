@@ -109,7 +109,7 @@ New-HTML -FavIcon $icon -TitleText $Title -Online -AutoRefresh 50 {
 - File called **certexpiry_cachebuilt.ps1** under "build-apicache" folder - **Scheduled tasks Code**.
 - Look the comment sections into that code.
 - Change CA Server name and CA Template names & Template OIDs into the Code as per your env. Given a screenshot below.
-<img src="https://github.com/21bshwjt/pki-polaris/blob/7b896321d49333962f3ed695ca0906fc966b1567/Screenshots/CA.png" width="800" height="320"></p>
+<img src="https://github.com/21bshwjt/pki-polaris/blob/7b896321d49333962f3ed695ca0906fc966b1567/Screenshots/CA.png" width="600" height="320"></p>
 
 ## How to access API ?
 
