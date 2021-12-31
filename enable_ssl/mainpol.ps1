@@ -13,8 +13,6 @@ Invoke-Expression -Command "Netsh http delete sslcert ipport=0.0.0.0:443"
 Invoke-Expression -Command "Netsh http delete sslcert ipport=192.168.1.5:443"
 #Start-Sleep -Seconds 5
 $AppID = "{" + $(New-Guid) + "}"
-#Change the DNS Alias
-#$HostName = 'polapi.bshwjt.biz'
 $Port = '443'
 #Change IP & Certificate Thumprint
 Invoke-Expression -Command "netsh http add sslcert ipport=0.0.0.0:$($Port) certhash=b9e617a9729fbac954f54a2c8ed58eec1aae3151 appid='$($AppID)' certstorename=MY"
