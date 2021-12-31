@@ -123,6 +123,9 @@ New-HTML -FavIcon $icon -TitleText $Title -Online -AutoRefresh 50 {
 
 - Port can be changed into **mailpol.ps1** .
 
+## Enable SSL
+- Enable the SSL once API is running fine. Replace the mainpol.ps1 from **enable_ssl** folder. **Server IP** & **Certificate thumbprint** are need to change from that code . Read the comment section carefully.     
+
 ___________________________________________________________________________________________________________________
 
 - [**Wiki**](https://21bshwjt.github.io/pki-polaris/)
