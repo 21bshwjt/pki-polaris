@@ -100,7 +100,7 @@ New-HTML -FavIcon $icon -TitleText $Title -Online -AutoRefresh 50 {
 }
 ```
 - Build beautiful Dasboard like below without writing any HTML/JS code.
-<p><img src="https://github.com/21bshwjt/pki-polaris/blob/63b395c292623f578c4d20042d6eefb3cb2dae56/Cert_Expiry.png" width="700" height="320"></p>
+<p><img src="https://github.com/21bshwjt/pki-polaris/blob/11dfbde9db1bf8588aa991e506c767317a00e98d/Sceenshots/Cert_Expiry.png" width="700" height="320"></p>
 
 ##### Certificate names are missing into the above screenshot because of those are default published Certificates without having Subject name. That will be not the case when new template will be created.
 
@@ -109,14 +109,14 @@ New-HTML -FavIcon $icon -TitleText $Title -Online -AutoRefresh 50 {
 - File called **certexpiry_cachebuilt.ps1** under "build-apicache" folder - **Scheduled tasks Code**.
 - Look the comment sections into that code.
 - Change CA Server name and CA Template names & Template OIDs into the Code as per your env. Given a screenshot below.
-<img src="https://github.com/21bshwjt/pki-polaris/blob/ad518d935a95c4d95a8f9103e5d72ca2a09175a0/CA.png" width="700" height="320"></p>
+<img src="https://github.com/21bshwjt/pki-polaris/blob/11dfbde9db1bf8588aa991e506c767317a00e98d/Sceenshots/CA.png" width="700" height="320"></p>
 
 ## How to access API ?
 
 - Home page URL : http://server-fqdn:81/home
-<img src="https://github.com/21bshwjt/pki-polaris/blob/67b98f3d226783ff0def041384476138fab83352/home.JPG" width="700" height="200"></p>
+<img src="https://github.com/21bshwjt/pki-polaris/blob/11dfbde9db1bf8588aa991e506c767317a00e98d/Sceenshots/home.JPG" width="700" height="200"></p>
 - Another API with **PSWriteHTML**; link : http://server-fqdn:81/employees
-<img src="https://github.com/21bshwjt/pki-polaris/blob/fe553e01b2f5569d716849b6dea34b10df4d9a26/emp.JPG" width="700" height="200"></p>
+<img src="https://github.com/21bshwjt/pki-polaris/blob/11dfbde9db1bf8588aa991e506c767317a00e98d/Sceenshots/emp.JPG" width="700" height="200"></p>
 - Certificate expiry monitoring link with **PsWriteHTML** : http://server-fqdn:81/certexpiry . 
 
 ## API Port
