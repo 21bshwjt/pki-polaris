@@ -124,8 +124,9 @@ New-HTML -FavIcon $icon -TitleText $Title -Online -AutoRefresh 50 {
 - Port can be changed into **mailpol.ps1** .
 
 ## Enable SSL
+- One Certificate is needed for SSL binding & import that Certificate into API server computer store. 
 - Enable the SSL once API is running fine. Replace the mainpol.ps1 from **enable_ssl** folder. **Server IP** & **Certificate thumbprint** are need to change from that code. 
-- Read the comments section carefully.   
+- Read the comments section carefully from **enable_ssl/mainpol.ps1**.   
 
 ___________________________________________________________________________________________________________________
 
