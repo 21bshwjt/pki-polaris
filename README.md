@@ -77,7 +77,7 @@ New-PolarisGetRoute -Path "/certexpiry" -Scriptblock {
 }
 ```
 - Users will get simillar message like below those users are not part of that Group.
-- <p><img src="https://github.com/21bshwjt/pki-polaris/blob/7518e2c08fe9bb60c2482c96631ccd55fc353253/Screenshots/denied.JPG" width="300" height="70"></p>
+ <p><img src="https://github.com/21bshwjt/pki-polaris/blob/7518e2c08fe9bb60c2482c96631ccd55fc353253/Screenshots/denied.JPG" width="300" height="70"></p>
 
 ### [subroutes]
 
