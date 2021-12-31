@@ -7,16 +7,16 @@ $LoggingDirectory = "C:\WebApi\Logs"
 Start-Transcript -Path "$($LoggingDirectory)\Polaris_$($dateformat).log" -Force
 $process = Get-Process -Id $pid
 $process.PriorityClass = 'RealTime'
-#Netsh http delete sslcert ipport=0.0.0.0:443
-#Change the IP
-Invoke-Expression -Command "Netsh http delete sslcert ipport=0.0.0.0:443"
-Invoke-Expression -Command "Netsh http delete sslcert ipport=192.168.1.5:443"
+#Provide Friendly Name into the Certificate
+$get_ip = (Get-NetIPAddress -AddressFamily IPv4 -InterfaceAlias Ethernet).IPAddress
+$get_thumbprint = (Get-ChildItem Cert:\LocalMachine\My | Where-Object {$_.FriendlyName -eq "webapi"}).Thumbprint
+$Port = '443'
+Invoke-Expression -Command "Netsh http delete sslcert ipport=0.0.0.0:$($Port)"
+Invoke-Expression -Command "Netsh http delete sslcert ipport=$($get_ip):$($Port)"
 #Start-Sleep -Seconds 5
 $AppID = "{" + $(New-Guid) + "}"
-$Port = '443'
-#Change IP & Certificate Thumprint
-Invoke-Expression -Command "netsh http add sslcert ipport=0.0.0.0:$($Port) certhash=b9e617a9729fbac954f54a2c8ed58eec1aae3151 appid='$($AppID)' certstorename=MY"
-Invoke-Expression -Command "netsh http add sslcert ipport=192.168.1.5:$($Port) certhash=b9e617a9729fbac954f54a2c8ed58eec1aae3151 appid='$($AppID)' certstorename=MY"
+Invoke-Expression -Command "netsh http add sslcert ipport=0.0.0.0:$($Port) certhash=$get_thumbprint appid='$($AppID)' certstorename=MY"
+Invoke-Expression -Command "netsh http add sslcert ipport=$($get_ip):$($Port) certhash=$get_thumbprint appid='$($AppID)' certstorename=MY"
 Set-Location C:\WebApi
 #REGION GET ROUTES
 .\routes\home.ps1
@@ -29,5 +29,3 @@ while ($true) {
     Start-Sleep -Milliseconds 10
 }
 Stop-Transcript
-
-
