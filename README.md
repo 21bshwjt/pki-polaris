@@ -32,7 +32,7 @@ mkdir c:\temp
 cd C:\temp\
 git clone https://github.com/21bshwjt/pki-polaris.git
 mkdir C:\WebApi\Logs
-Copy-Item C:\temp\pki-polaris\* -Recurse -Force C:\WebApi\ -Verbose
+Copy-Item C:\temp\pki-polaris\* -Recurse C:\WebApi\ -Force -Verbose
 ```
 ```powershell
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
