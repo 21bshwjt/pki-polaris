@@ -113,13 +113,11 @@ New-HTML -FavIcon $icon -TitleText $Title -Online -AutoRefresh 50 {
 - Change CA Server name and CA Template names & Template OIDs into the Code as per your env. Given a screenshot below.
 <img src="https://github.com/21bshwjt/pki-polaris/blob/7b896321d49333962f3ed695ca0906fc966b1567/Screenshots/CA.png" width="700" height="320"></p>
 
-## How to access API ?
+## How to Test the APIs ?
 
-- Home page URL : http://server-fqdn:81/home | **Test Web Page**. 
-<img src="https://github.com/21bshwjt/pki-polaris/blob/7b896321d49333962f3ed695ca0906fc966b1567/Screenshots/home.JPG" width="800" height="200"></p>
-- Another API with **PSWriteHTML**; link : http://server-fqdn:81/employees | **Test Web Page**. 
-<img src="https://github.com/21bshwjt/pki-polaris/blob/7b896321d49333962f3ed695ca0906fc966b1567/Screenshots/emp.JPG" width="800" height="200"></p>
-- Certificate expiry monitoring link with **PsWriteHTML** : http://server-fqdn:81/certexpiry . 
+- **Test Home Page with HTML** : http://server-fqdn:81/home
+- **Test Employees Page with PsWriteHTML** : http://server-fqdn:81/employees
+- **Certificate expiry monitoring link with PsWriteHTML** : http://server-fqdn:81/certexpiry
 
 ## API Port
 
