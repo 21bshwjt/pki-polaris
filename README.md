@@ -127,8 +127,9 @@ ________________________________________________________________________________
 
 - [**Wiki**](https://21bshwjt.github.io/pki-polaris/)
 - [**Me@LinkedIn**](https://www.linkedin.com/in/bshwjt/)
+- Certificate expiry intial code taken from [**TechNet Forum**](https://social.technet.microsoft.com/Forums/windowsserver/en-US/7c8ecd4f-eb2a-49f9-ae53-aad3e653d788/report-on-soon-to-be-expired-certificates?forum=winserversecurity); I made necessary changes to fit that with **Polaris** & **PsWriteHTML**.  
 - Thanks to **Deepak Dhami** , **Siva Nallagatla** , **Prateek Singh** & **Chen V.** Special Thanks to **Przemyslaw Klys** (PswriteHTML Module Devoloper).
-- Certificate expiry intial code taken from [**TechNet Forum**](https://social.technet.microsoft.com/Forums/windowsserver/en-US/7c8ecd4f-eb2a-49f9-ae53-aad3e653d788/report-on-soon-to-be-expired-certificates?forum=winserversecurity); I made necessary changes to fit that with **Polaris** & **PsWriteHTML**.    
+ 
 ___________________________________________________________________________________________________________________
 
 ![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) `Please Share Your Comments & Feedback.`
