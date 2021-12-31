@@ -115,9 +115,9 @@ New-HTML -FavIcon $icon -TitleText $Title -Online -AutoRefresh 50 {
 
 ## How to Test the APIs ?
 
-- **Test Home Page with HTML** : http://server-fqdn:81/home
-- **Test Employees Page with PsWriteHTML** : http://server-fqdn:81/employees
-- **Certificate expiry monitoring link with PsWriteHTML** : http://server-fqdn:81/certexpiry
+- **Step1** : Test Home Page (**HTML**) : http://server-fqdn:81/home
+- **Step2** : Test Employees Page (**PsWriteHTML**) : http://server-fqdn:81/employees
+- **Step3** : Test Certificates Expiry Report (**PsWriteHTML**) : http://server-fqdn:81/certexpiry
 
 ## API Port
 
