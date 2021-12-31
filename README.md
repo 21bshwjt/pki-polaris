@@ -113,9 +113,9 @@ New-HTML -FavIcon $icon -TitleText $Title -Online -AutoRefresh 50 {
 
 ## How to access API ?
 
-- Home page URL : http://server-fqdn:81/home
+- Home page URL : http://server-fqdn:81/home | **Test Web Page**. 
 <img src="https://github.com/21bshwjt/pki-polaris/blob/7b896321d49333962f3ed695ca0906fc966b1567/Screenshots/home.JPG" width="800" height="200"></p>
-- Another API with **PSWriteHTML**; link : http://server-fqdn:81/employees
+- Another API with **PSWriteHTML**; link : http://server-fqdn:81/employees | **Test Web Page**. 
 <img src="https://github.com/21bshwjt/pki-polaris/blob/7b896321d49333962f3ed695ca0906fc966b1567/Screenshots/emp.JPG" width="800" height="200"></p>
 - Certificate expiry monitoring link with **PsWriteHTML** : http://server-fqdn:81/certexpiry . 
 
