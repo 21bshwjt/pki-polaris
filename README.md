@@ -100,7 +100,7 @@ New-HTML -FavIcon $icon -TitleText $Title -Online -AutoRefresh 50 {
 }
 ```
 - Build beautiful Dasboard like below without writing any HTML/JS code.
-<p><img src="https://github.com/21bshwjt/pki-polaris/blob/7b896321d49333962f3ed695ca0906fc966b1567/Screenshots/Cert_Expiry.png" width="700" height="320"></p>
+<p><img src="https://github.com/21bshwjt/pki-polaris/blob/e5225f83b77bf454b24a32bf63a6aa6eba21d544/Screenshots/Cert_Expiry_new.png" width="800" height="320"></p>
 
 ##### Certificate names are missing into the above screenshot because of those are default published Certificates without having Subject name. That will be not the case when new template will be created.
 
