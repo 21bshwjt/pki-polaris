@@ -128,7 +128,8 @@ New-HTML -FavIcon $icon -TitleText $Title -Online -AutoRefresh 50 {
 - Read the comments section carefully.   
 
 ## HTML
-- Bootstrap templates have been used for static HTML pages; those are present in **htmls** folder. [Documentation](https://getbootstrap.com/docs/5.1/getting-started/introduction/). That is **optional**.  
+- **Optional**
+- Bootstrap templates have been used for static HTML pages; those are present in **htmls** folder. [Documentation](https://getbootstrap.com/docs/5.1/getting-started/introduction/). 
 
 ___________________________________________________________________________________________________________________
 
