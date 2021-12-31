@@ -129,8 +129,10 @@ New-HTML -FavIcon $icon -TitleText $Title -Online -AutoRefresh 50 {
 - Put a Friendly name into the same Certificate; please refer the below screenshot & change the same into the code (line nos. 12). 
 <img src="https://github.com/21bshwjt/pki-polaris/blob/86f7f1e51bbab5e3e28b46a7dc7a0327ff8081dc/Screenshots/webapicert.JPG" width="400" height="275">
 
- 
-___________________________________________________________________________________________________________________
+## Troubleshooting on API
+- Check the logs from **/Logs** Folder. Also Log will show all the existing Routes.
+
+ ___________________________________________________________________________________________________________________
 
 - [**Wiki**](https://21bshwjt.github.io/pki-polaris/)
 - [**Me@LinkedIn**](https://www.linkedin.com/in/bshwjt/)
