@@ -123,13 +123,7 @@ New-HTML -FavIcon $icon -TitleText $Title -AutoRefresh 50 {
 - **Step1** : Test Home Page (**HTML**) : http://server-fqdn:81/home
 - **Step2** : Test Employees Page (**PsWriteHTML**) : http://server-fqdn:81/employees
 - **Step3** : Test Certificates Expiry Report (**PsWriteHTML**) : http://server-fqdn:81/certexpiry
-#### Test the API using PowerShell into the local server.
-```powershell
-$creds = Get-Credential
-$HostName = ($env:COMPUTERNAME+"."+$env:USERDNSDOMAIN).ToLower()
-$url = "https://$($HostName)/home"
-(Invoke-WebRequest -Uri $url -Credential $creds).StatusCode
-```
+
 ## API Port
 
 - Port can be changed into **mailpol.ps1** .
@@ -139,6 +133,14 @@ $url = "https://$($HostName)/home"
 - Enable the SSL once API is running fine. Replace the mainpol.ps1 from **enable_ssl** folder. 
 - Put a Friendly name into the same Certificate; please refer the below screenshot & change the same into the code (line nos. 12). 
 <img src="https://github.com/21bshwjt/pki-polaris/blob/86f7f1e51bbab5e3e28b46a7dc7a0327ff8081dc/Screenshots/webapicert.JPG" width="400" height="275">
+
+## Test the SSL enabled API using PowerShell into the local server.
+```powershell
+$creds = Get-Credential
+$HostName = ($env:COMPUTERNAME+"."+$env:USERDNSDOMAIN).ToLower()
+$url = "https://$($HostName)/home"
+(Invoke-WebRequest -Uri $url -Credential $creds).StatusCode
+```
 
 ## Troubleshooting on API
 - Check the logs from **/Logs** Folder. Also Log will show all the existing Routes.
