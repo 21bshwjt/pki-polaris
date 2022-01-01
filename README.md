@@ -123,7 +123,13 @@ New-HTML -FavIcon $icon -TitleText $Title -AutoRefresh 50 {
 - **Step1** : Test Home Page (**HTML**) : http://server-fqdn:81/home
 - **Step2** : Test Employees Page (**PsWriteHTML**) : http://server-fqdn:81/employees
 - **Step3** : Test Certificates Expiry Report (**PsWriteHTML**) : http://server-fqdn:81/certexpiry
-
+#### Test the API using PowerShell into the local server.
+```powershell
+$creds = Get-Credential
+$HostName = ($env:COMPUTERNAME+"."+$env:USERDNSDOMAIN).ToLower()
+$url = "https://$($HostName)/home"
+(Invoke-WebRequest -Uri $url -Credential $creds).StatusCode
+```
 ## API Port
 
 - Port can be changed into **mailpol.ps1** .
