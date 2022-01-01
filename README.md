@@ -4,7 +4,7 @@
 Polaris Page can be restricted by Active Directory security group & APIs can be publish using SSL for security** .
 
 ## Use case
-- Certificate expiry monitoring is very CRITICAL. Create beautiful Dashboard without write any HTML Code & grant access by using AD security group to access those pages**.
+- Certificate expiry monitoring is very CRITICAL. Create beautiful Dashboard without write any HTML Code & grant access by using AD security group to access those pages .
 - Any kind of report can be integrated. Like : AD , DNS , Azure & so on.  
 
 ## Solution implementation time
