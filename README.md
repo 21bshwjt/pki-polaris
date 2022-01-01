@@ -6,7 +6,7 @@
 Polaris Page can be restricted by Active Directory security group & APIs can be publish using SSL for security.
 
 ## Solution implementation time
--  **30 minutes**.
+-  **15 minutes**.
  
 ## Prerequisites
 - [Polaris](https://github.com/PowerShell/Polaris)
