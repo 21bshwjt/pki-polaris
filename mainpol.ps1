@@ -1,6 +1,6 @@
 [void](Import-Module Polaris)
 Set-Location C:\WebApi
-$VerbosePreference = 'Continue' # Comment this to stop transcript generation
+#$VerbosePreference = 'Continue' # Comment this to stop transcript generation
 $dateformat = Get-Date -format 'MM.dd.yyyy.HH.mm.ss' # modified this to reflect the exact time in 24 hour format
 #$Subdateformat = Get-Date -format 'MM.dd.yyyy'
 $LoggingDirectory = "C:\WebApi\Logs"
