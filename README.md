@@ -5,6 +5,9 @@
 - Polaris is a micro-framework to build the Wep API/s; similar like Flash (Python) but Polaris is having very minimum feathers & that is worked with PowerShell.
 Polaris Page can be restricted by Active Directory security group & APIs can be publish using SSL for security.
 
+## Solution implementation time
+-  **30 minutes**.
+ 
 ## Prerequisites
 - [Polaris](https://github.com/PowerShell/Polaris)
 - [PsWriteHTML](https://github.com/EvotecIT/PSWriteHTML)
