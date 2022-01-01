@@ -61,5 +61,89 @@
         "ExpiryDate":  "\/Date(1672481018000)\/",
         "Serial":  "3a0000000b5d68115ce521eeaa00000000000b",
         "Template":  "Kerberos Authentication"
+    },
+    {
+        "CertificateName":  null,
+        "DaysUntilExpired":  365,
+        "ExpiryDate":  "\/Date(1672558011000)\/",
+        "Serial":  "3a0000000dd46f9f201b4da97700000000000d",
+        "Template":  "DomainController Authentication"
+    },
+    {
+        "CertificateName":  null,
+        "DaysUntilExpired":  365,
+        "ExpiryDate":  "\/Date(1672558011000)\/",
+        "Serial":  "3a0000000ef0a690ef0f2f969f00000000000e",
+        "Template":  "Kerberos Authentication"
+    },
+    {
+        "CertificateName":  null,
+        "DaysUntilExpired":  365,
+        "ExpiryDate":  "\/Date(1672558032000)\/",
+        "Serial":  "3a0000000f6e3a58f2bf5ef3e100000000000f",
+        "Template":  "DomainController Authentication"
+    },
+    {
+        "CertificateName":  null,
+        "DaysUntilExpired":  365,
+        "ExpiryDate":  "\/Date(1672558033000)\/",
+        "Serial":  "3a00000010f41dbe89f007777d000000000010",
+        "Template":  "Kerberos Authentication"
+    },
+    {
+        "CertificateName":  null,
+        "DaysUntilExpired":  365,
+        "ExpiryDate":  "\/Date(1672563471000)\/",
+        "Serial":  "3a0000001119d49a60a682fa89000000000011",
+        "Template":  "DomainController Authentication"
+    },
+    {
+        "CertificateName":  null,
+        "DaysUntilExpired":  365,
+        "ExpiryDate":  "\/Date(1672563471000)\/",
+        "Serial":  "3a0000001221df2e391c64717b000000000012",
+        "Template":  "Kerberos Authentication"
+    },
+    {
+        "CertificateName":  null,
+        "DaysUntilExpired":  365,
+        "ExpiryDate":  "\/Date(1672563489000)\/",
+        "Serial":  "3a000000130d3b6b7b6be44161000000000013",
+        "Template":  "DomainController Authentication"
+    },
+    {
+        "CertificateName":  null,
+        "DaysUntilExpired":  365,
+        "ExpiryDate":  "\/Date(1672563489000)\/",
+        "Serial":  "3a00000014b0c931b1240af50d000000000014",
+        "Template":  "Kerberos Authentication"
+    },
+    {
+        "CertificateName":  null,
+        "DaysUntilExpired":  365,
+        "ExpiryDate":  "\/Date(1672563604000)\/",
+        "Serial":  "3a000000151db1af235f833232000000000015",
+        "Template":  "DomainController Authentication"
+    },
+    {
+        "CertificateName":  null,
+        "DaysUntilExpired":  365,
+        "ExpiryDate":  "\/Date(1672563604000)\/",
+        "Serial":  "3a0000001696b63609673e82d9000000000016",
+        "Template":  "Kerberos Authentication"
+    },
+    {
+        "CertificateName":  null,
+        "DaysUntilExpired":  365,
+        "ExpiryDate":  "\/Date(1672563620000)\/",
+        "Serial":  "3a00000017c9b1c36a173c137e000000000017",
+        "Template":  "DomainController Authentication"
+    },
+    {
+        "CertificateName":  null,
+        "DaysUntilExpired":  365,
+        "ExpiryDate":  "\/Date(1672563620000)\/",
+        "Serial":  "3a00000018c10f687a1d596428000000000018",
+        "Template":  "Kerberos Authentication"
     }
 ]
