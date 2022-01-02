@@ -19,6 +19,7 @@ New-PolarisStaticRoute -RoutePath "/routes" -FolderPath "./routes"
 .\routes\home.ps1
 .\routes\certexpiry.ps1
 .\routes\employees.ps1
+.\routes\domaincontroller.ps1
 
 #ENDREGION
 #Start-Polaris -Port $Port -Https -MaxRunspaces 5 -Auth IntegratedWindowsAuthentication
