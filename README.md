@@ -135,6 +135,8 @@ New-HTML -FavIcon $icon -TitleText $Title -AutoRefresh 50 {
 <img src="https://github.com/21bshwjt/pki-polaris/blob/86f7f1e51bbab5e3e28b46a7dc7a0327ff8081dc/Screenshots/webapicert.JPG" width="400" height="275">
 
 ## Test the SSL enabled API using PowerShell from the local server.
+- SSL is enabled with default port (TCP:443).
+- Code output should be 200.
 ```powershell
 $creds = Get-Credential
 $HostName = ($env:COMPUTERNAME+"."+$env:USERDNSDOMAIN).ToLower()
