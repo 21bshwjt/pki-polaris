@@ -1,1 +1,0 @@
-﻿$petritable = "http://corp-dc02/css/petri.css"
