@@ -23,6 +23,8 @@ New-PolarisStaticRoute -RoutePath "/routes" -FolderPath "./routes"
 #ENDREGION
 #Start-Polaris -Port $Port -Https -MaxRunspaces 5 -Auth IntegratedWindowsAuthentication
 Start-Polaris -Port $Port -MaxRunspaces 5 -Auth IntegratedWindowsAuthentication
+#Showing the Routes
+Get-PolarisRoute | Select-Object Path,Method
 
 while ($true) {
     Start-Sleep -Milliseconds 10
