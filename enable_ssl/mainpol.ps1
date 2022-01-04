@@ -7,8 +7,8 @@ $LoggingDirectory = "C:\WebApi\Logs"
 Start-Transcript -Path "$($LoggingDirectory)\Polaris_$($dateformat).log" -Force
 $process = Get-Process -Id $pid
 $process.PriorityClass = 'RealTime'
-#Provide Friendly Name into the Certificate
 $get_ip = (Get-NetIPAddress -AddressFamily IPv4 -InterfaceAlias Ethernet).IPAddress
+#Certificate Friendly name needs to match with the code. Pls refer the below line. My Certificate Friendly name is "webapi".
 $get_thumbprint = (Get-ChildItem Cert:\LocalMachine\My | Where-Object {$_.FriendlyName -eq "webapi"}).Thumbprint
 $Port = '443'
 Invoke-Expression -Command "Netsh http delete sslcert ipport=0.0.0.0:$($Port)"
