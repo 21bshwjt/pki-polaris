@@ -82,7 +82,7 @@ New-PolarisGetRoute -Path "/certexpiry" -Scriptblock {
 }
 ```
 - Users will get simillar message like below those users are not part of that Group.
- <p><img src="https://github.com/21bshwjt/pki-polaris/blob/7518e2c08fe9bb60c2482c96631ccd55fc353253/Screenshots/denied.JPG" width="300" height="70"></p>
+<img src="https://github.com/21bshwjt/pki-polaris/blob/7518e2c08fe9bb60c2482c96631ccd55fc353253/Screenshots/denied.JPG?raw=true" width="300" height="70">
 
 ### [subroutes]
 
@@ -107,7 +107,7 @@ New-HTML -FavIcon $icon -TitleText $Title -AutoRefresh 50 {
 }
 ```
 - Build beautiful Dasboard like below without writing any HTML/JS code.
-<p><img src="https://github.com/21bshwjt/pki-polaris/blob/7e7d95ea34a203bfb6d0eb91f625d780105592f5/Screenshots/Cert_Expiry.JPG" width="800" height="320"></p>
+<img src="https://github.com/21bshwjt/pki-polaris/blob/7e7d95ea34a203bfb6d0eb91f625d780105592f5/Screenshots/Cert_Expiry.JPG?raw=true" width="800" height="320">
 
 ##### Certificate names are missing into the above screenshot because of those are default published Certificates without having Subject name. That will be not the case when new template will be created.
 
@@ -116,7 +116,7 @@ New-HTML -FavIcon $icon -TitleText $Title -AutoRefresh 50 {
 - File called **certexpiry_cachebuilt.ps1** under "build-apicache" folder - **Scheduled tasks Code**.
 - Look the comment sections into that code.
 - Change CA Server name and CA Template names & Template OIDs into the Code as per your env. Given a screenshot below.
-<img src="https://github.com/21bshwjt/pki-polaris/blob/7b896321d49333962f3ed695ca0906fc966b1567/Screenshots/CA.png?raw=true" width="700" height="320"></p>
+<img src="https://github.com/21bshwjt/pki-polaris/blob/7b896321d49333962f3ed695ca0906fc966b1567/Screenshots/CA.png?raw=true" width="700" height="320">
 
 ## How to Test the APIs ?
 
@@ -132,7 +132,7 @@ New-HTML -FavIcon $icon -TitleText $Title -AutoRefresh 50 {
 - One Certificate is needed for SSL binding & import that Certificate into API server **computer store**. 
 - Enable the SSL once API is running fine. Replace the mainpol.ps1 from **enable_ssl** folder. 
 - Put a Friendly name into the same Certificate; please refer the below screenshot & change the same into the code (line nos. 12). 
-<img src="https://github.com/21bshwjt/pki-polaris/blob/86f7f1e51bbab5e3e28b46a7dc7a0327ff8081dc/Screenshots/webapicert.JPG" width="400" height="275">
+<img src="https://github.com/21bshwjt/pki-polaris/blob/86f7f1e51bbab5e3e28b46a7dc7a0327ff8081dc/Screenshots/webapicert.JPG?raw=true" width="400" height="275">
 
 ## Test the SSL enabled API using PowerShell from the local server.
 - SSL is enabled with default port (TCP:443).
