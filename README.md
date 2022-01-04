@@ -136,7 +136,7 @@ New-HTML -FavIcon $icon -TitleText $Title -AutoRefresh 50 {
 
 ## Test the SSL enabled API using PowerShell from the local server.
 - SSL is enabled with default port (TCP:443).
-- Code output should be 200.
+- Output should be 200.
 ```powershell
 $creds = Get-Credential
 $HostName = ($env:COMPUTERNAME+"."+$env:USERDNSDOMAIN).ToLower()
