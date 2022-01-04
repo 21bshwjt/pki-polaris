@@ -145,9 +145,18 @@ $url = "https://$($HostName)/home"
 ```
 
 ## Troubleshooting on API
-- Check the logs from **/Logs** Folder. Also Log will show all the existing Routes.
+- Check the logs from **/Logs** Folder. Also Log will show all the existing Routes (e.g. given below).
+```powershell
+Path   : /home
+Method : GET
 
- ___________________________________________________________________________________________________________________
+Path   : /certexpiry
+Method : GET
+
+Path   : /employees
+Method : GET
+```
+___________________________________________________________________________________________________________________
 
 - [**Wiki**](https://21bshwjt.github.io/pki-polaris/)
 - [**Me@LinkedIn**](https://www.linkedin.com/in/bshwjt/)
