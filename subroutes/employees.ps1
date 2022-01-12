@@ -1,5 +1,4 @@
-﻿#Test
-[void](Import-Module Pswritehtml -Force)
+﻿[void](Import-Module Pswritehtml -Force)
 $getempdata = Get-Content C:\WebApi\apicache\employees.json | ConvertFrom-Json
 
 New-HTML -TitleText "Identity" {
