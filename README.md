@@ -156,6 +156,12 @@ Method : GET
 
 Path   : /employees
 Method : GET
+
+Path   : /json_payload
+Method : GET
+
+Path   : /domaincontroller
+Method : GET
 ```
 ## JSON Payload
 - An example route is present called **jason_payload** that can be used from any application and from any operating system.  
