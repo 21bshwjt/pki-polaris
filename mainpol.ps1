@@ -19,6 +19,7 @@ New-PolarisStaticRoute -RoutePath "/routes" -FolderPath "./routes"
 .\routes\home.ps1
 .\routes\certexpiry.ps1
 .\routes\employees.ps1
+.\routes\json_payload.ps1
 .\routes\domaincontroller.ps1
 
 #ENDREGION
@@ -31,5 +32,3 @@ while ($true) {
     Start-Sleep -Milliseconds 10
 }
 Stop-Transcript
-
-
