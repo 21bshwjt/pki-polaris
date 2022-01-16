@@ -1,1 +1,1 @@
-Get-Content "C:\WebPol\apicache\certmon.json"
+Get-Content "C:\WebApi\apicache\cert.json"
