@@ -157,7 +157,8 @@ Method : GET
 Path   : /employees
 Method : GET
 ```
-
+## JSON Payload
+- An example route is present called **jason_payload** that can be used from any application and from any operating system.  
 ___________________________________________________________________________________________________________________
 
 - [**Wiki**](https://21bshwjt.github.io/pki-polaris/)
