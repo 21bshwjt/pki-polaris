@@ -1,6 +1,6 @@
 ﻿[void](Import-Module PSWriteHTML)   
 $Title = 'Dashboard | Domain Controllers'
-$icon = 'https://pngmind.com/wp-content/uploads/2019/08/Linkedin-Logo-Png-Transparent-Background.png'
+$icon = 'Your Image URL'
 $headertxt = "<h1>Corp Domain Controllers</h1>"
 $TableTitle = "Corp Domain Controller"
 $Get_dcs = [system.directoryservices.activedirectory.domain]::GetCurrentDomain().DomainControllers | Select Name,IPAddress,OSVersion,SiteName
