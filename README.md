@@ -90,7 +90,7 @@ New-PolarisGetRoute -Path "/certexpiry" -Scriptblock {
 ```powershell
 [void](Import-Module PSWriteHTML)   
 $Title = 'Dashboard | PKI-Expiry'
-$icon = 'https://pngmind.com/wp-content/uploads/2019/08/Linkedin-Logo-Png-Transparent-Background.png'
+$icon = 'Your Image URL'
 $headertxt = "<h1>Corp Certificate Expiry Report</h1>"
 $TableTitle = "MSFT-CA1 Expiry Report"
 $data = Get-Content "C:\WebApi\apicache\cert.json" | ConvertFrom-Json
