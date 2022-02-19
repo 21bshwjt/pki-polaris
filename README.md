@@ -1,14 +1,5 @@
 # Certificate Expiry Monitoring DashBoard
-
-```mermaid
-    graph LR;
-    Polaris-->Routes;
-    Routes-->SubRoutes;
-    Routes-->APICache;
-    SubRoutes-->EndPoints;
-    APICache-->EndPoints;
-    EndPoints-->Users
-```  
+<img src="https://github.com/21bshwjt/pki-polaris/blob/master/Screenshots/diagram.PNG?raw=true" width="800" height="200">
 
 **Polaris is a micro-framework to build the Wep API/s; similar like Flash (Python) but Polaris is having very minimum feathers & that is worked with PowerShell.
 Polaris Page can be restricted by Active Directory security group & APIs can be publish using SSL for security** .
