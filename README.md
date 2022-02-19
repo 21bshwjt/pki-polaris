@@ -1,14 +1,28 @@
 # Certificate Expiry Monitoring DashBoard
 
-```mmd
-  graph TD;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+</head>
+<body>
+  <div class="mermaid">
+  graph LR;
       Polaris-->Routes;
       Routes-->SubRoutes;
       Routes-->APICache;
       SubRoutes-->EndPoints;
       APICache-->EndPoints;
       EndPoints-->Users
-```   
+  </div>
+  <script src="https://unpkg.com/mermaid@8.0.0-rc.8/dist/mermaid.min.js"></script>
+  <script>
+    mermaid.initialize({
+      theme: 'forest'
+    });
+  </script>
+</body>
+</html>   
 
 **Polaris is a micro-framework to build the Wep API/s; similar like Flash (Python) but Polaris is having very minimum feathers & that is worked with PowerShell.
 Polaris Page can be restricted by Active Directory security group & APIs can be publish using SSL for security** .
