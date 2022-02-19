@@ -1,6 +1,6 @@
 # Certificate Expiry Monitoring DashBoard
 
-```mermaid
+```mmd
   graph TD;
       Polaris-->Routes;
       Routes-->SubRoutes;
