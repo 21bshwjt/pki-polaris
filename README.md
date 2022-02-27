@@ -17,7 +17,7 @@ Polaris Page can be restricted by Active Directory security group & APIs can be 
 - [gMSA (**Optional**)](https://docs.microsoft.com/en-us/windows-server/security/group-managed-service-accounts/getting-started-with-group-managed-service-accounts/)
 - AD Security group for RBAC (**Optional**).
 - Certificate for SSL (**Optional**).
-- Git.
+- Git agent.
 ```diff
 + All optional components are used for security purpose & those are required in Production.
 ```
