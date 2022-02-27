@@ -7,13 +7,3 @@
       APICache-->EndPoints;
       EndPoints-->Users
 ```
-
-```mermaid
-  graph TD;
-      Polaris-->Routes;
-      Routes-->SubRoutes;
-      Routes-->APICache;
-      SubRoutes-->EndPoints;
-      APICache-->EndPoints;
-      EndPoints-->Users
-```
