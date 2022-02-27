@@ -14,6 +14,5 @@
     & $nssm install $name $executable $arguments
     $null = & $nssm set $name Description $description
     Start-Service $name
-
 }
 Install-Service -Name corp-webapi -Description 'PolarisWebAPI' -Executable Powershell.exe -Arguments '-ExecutionPolicy Bypass -Command C:\WebApi\mainpol.ps1'
