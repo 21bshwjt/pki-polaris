@@ -19,7 +19,7 @@ Polaris Page can be restricted by Active Directory security group & APIs can be 
 - Certificate for SSL (**Optional**).
 - Git.
 ```diff
-+ All optional components are used for security purpose & those are required in Production. Those can be ignored during the testing.
++ All optional components are used for security purpose & those are required in Production.
 ```
 
 ## Description
