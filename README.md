@@ -1,7 +1,7 @@
 <h1 align="center">
-  <img width="45" src="https://github.com/21bshwjt/pki-polaris/blob/7e7d95ea34a203bfb6d0eb91f625d780105592f5/Screenshots/Cert_Expiry.JPG">
+  <img width="45" src="https://github.com/21bshwjt/pki-polaris/blob/0939a847bc7ef3400a4a91c13925549efa46833e/Screenshots/pki.png">
   Certificate Expiry Monitoring DashBoard
-  <img width="45" src="https://github.com/21bshwjt/pki-polaris/blob/7b896321d49333962f3ed695ca0906fc966b1567/Screenshots/CA.png">
+  <img width="45" src="https://github.com/21bshwjt/pki-polaris/blob/0939a847bc7ef3400a4a91c13925549efa46833e/Screenshots/pki.png">
 </h1>
 
 **Polaris is a micro-framework to build the Wep API/s; similar like Flash (Python) but Polaris is having very minimum feathers & that is worked with PowerShell.
